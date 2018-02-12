@@ -1,0 +1,331 @@
+/* 8.1 Min width 768px */
+
+@media (min-width: 768px) {
+
+  html {
+    font-size: 13px;
+  }
+
+  .pull-sm-left {
+    float: left;
+  }
+
+  .pull-sm-right {
+    float: right;
+  }
+
+  /* Sidebar Menu */
+
+  .menu {
+    width: 50%;
+  }
+
+  /* Homepage */
+
+  .boxed {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .boxed-inner {
+    padding-left: 0;
+  }
+
+  .right-boxed {
+    right: 3rem;
+  }
+
+  .left-boxed {
+    left: 3rem;
+  }
+
+  /* Section About */
+
+  .section-about {
+    padding-top: 12rem;
+  }
+
+  /* Section Projects */
+
+  .section-projects .filter {
+    margin-right: 14rem;
+  }
+
+  .section-projects .view-projects {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  /* Works Carousel */
+
+  .sly ul li {
+    width: 555px;
+  }
+
+  /* Homepage v2 */
+
+  .project-box {
+    padding-bottom: 75%;
+  }
+
+  .row-contact-info {
+    margin-top: -2rem;
+  }
+
+  .col-contact-info {
+    padding-top: 4rem;
+    margin-top: 2rem;
+  }
+
+  /* Footer */
+
+  .footer-flex .flex-item {
+    -webkit-flex: 0 0 33.3333%;
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+  }
+}
+
+/* 8.2 Min width 992px */
+
+@media (min-width: 992px) {
+
+  html {
+    font-size: 14px;
+  }
+
+  /* Helpers */
+
+  .pull-md-right {
+    float: right;
+  }
+
+  /* Sidebar Menu */
+
+  .menu {
+    width: 30rem;
+  }
+
+  /* Homepage */
+
+  .boxed {
+    padding-left: 4.2857rem;
+    padding-right: 4.2857rem;
+  }
+
+  .right-boxed {
+    right: 4.2857rem;
+  }
+
+  .left-boxed {
+    left: 4.2857rem;
+  }
+
+  /* Homepage v2 */
+
+  .boxed-inner .boxed {
+    padding-left: 6rem;
+  }
+
+  .service-list {
+    margin-bottom: 0;
+  }
+
+  .col-contact-info {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .row-contact-info {
+    margin-top: -5rem;
+  }
+
+  .col-contact-info {
+    margin-top: 5rem;
+  }
+
+  /* Pages */
+
+  .page-header {
+    margin: 12.8rem 0 10.8rem;
+  }
+
+  .page-header-2 {
+    margin: 8.7rem 0 10.5rem;
+  }
+
+  .page-header-3 {
+    margin: 9.2rem 0 12.2rem;
+  }
+
+  .page-header-3 .title-hr {
+    margin: 0.9rem 0 0;
+  }
+
+  .about-info .section-info .title-hr {
+    margin-top: 1rem;
+  }
+
+  /* Post detail */
+
+  .secondary {
+    padding: 0.5rem 0 0 6rem;
+    margin-top: 0;
+  }
+
+  .post-thumbnail {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* About */
+
+  .about-info {
+    padding-top: 1.2rem;
+  }
+
+  /* Contact */
+
+  .map {
+    height: 36rem;
+  }
+
+  /* Homepage v2 */
+
+  .col-contact-info:nth-child(2n) {
+    border-left: 1px solid #cacaca;
+  }
+
+}
+
+/* 8.3 Min width 1200px */
+
+@media (min-width: 1200px) {
+
+  /* Helpers */
+
+  .pull-lg-right {
+    float: right;
+  }
+
+  /* Section Projects */
+
+  .section-projects .filter-content {
+    margin-top: 0;
+  }
+
+  /* Homepage v2 */
+
+  .section-3 .link-arrow.h5 {
+    float: right;
+    margin-top: -1.3rem;
+  }
+
+  .section-5 .title-uppercase {
+    margin-top: 22vh;
+    margin-bottom: 0;
+  }
+
+  /* Works Carousel */
+
+  .sly ul li {
+    width: 685px;
+  }
+
+  /* Homepage v2 */
+
+  .section-5 .vertical-centred {
+    padding-top: 17rem;
+    padding-bottom: 8rem;
+  }
+
+  .col-contact-info {
+    border-left: 1px solid #cacaca;
+  }
+
+  /* Footer */
+
+  .footer-flex .flex-item {
+    -webkit-box-flex: none;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+  }
+}
+
+/* 8.5 Min Height 500px */
+
+@media (min-height: 500px) {
+
+  #pp-nav .pp-nav-up,
+  #pp-nav .pp-nav-down {
+    display: block;
+  }
+
+}
+
+/* 8.6 Min Height 600px */
+
+@media (min-height: 600px) {
+
+  /* Sidebar Menu */
+
+  .menu .menu-lang {
+    //  top:7rem;
+    bottom: 16rem;
+  }
+
+  .menu-list {
+    top: 11rem;
+    bottom: 20rem;
+  }
+
+  .menu-list > li {
+    font-size: 2.571rem;
+  }
+
+  .menu-footer {
+    bottom: 5rem;
+  }
+
+  .menu-footer .copy {
+    display: block;
+  }
+}
+
+/* 8.7 Min Height 700px */
+
+@media (min-height: 700px) {
+
+  /* Homepage v2 */
+
+  .copy-bottom {
+    display: block;
+  }
+
+  .lang-bottom {
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  h2.section-title {
+    font-size: 2rem;
+  }
+  .section-title .link-arrow-2 {
+    margin-top: 0.5rem;
+  }
+  .owl-prev,
+  .owl-next{
+    font-size: 2.5rem;
+  }
+  .news-title{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .news-description {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,85 @@
+.footer{
+  position: relative;
+  color: $footer-txt-color;
+  line-height: 1.65;
+  border-top: 1px solid $footer-top-border-color;
+  font-size: 0.95rem;
+  z-index: 0;
+  &:after {
+    content:"";
+    height: 1px;
+    background-color: lighten($footer-top-border-color, 16%);
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    left:0;
+  }
+  .footer-brand {
+    img {
+      filter: grayscale(100%);
+      height: 4rem;
+      margin-bottom: 1rem;
+      transition: all 0.5s;
+      opacity: 0.75;
+      &:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+    }
+  }
+  .social-list {
+    margin: 0 auto;
+    a {
+      font-size: 1.25rem;
+      color: darken($footer-social-list-color, 10%);
+      &:hover {
+        color: $footer-link-hover;
+      }
+    }
+  }
+  h1.title, h2.title, h3.title, h4.title {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+  }
+  .copyrights {
+    font-size: 0.75rem;
+  }
+}
+
+.footer ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+.footer ul li a{
+  color: $footer-link-color;
+}
+
+.footer ul .active a,
+.footer ul li a:hover{
+  color: $footer-link-hover;
+  text-decoration: none;
+}
+
+.footer-flex{
+  margin-top: -4rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer-flex .flex-item{
+  margin-top: 4rem;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}

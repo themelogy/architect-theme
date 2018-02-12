@@ -1,0 +1,26 @@
+
+/* 3.6 Section Partners */
+
+
+
+.partner-carousel{
+  //margin-top: 10.28rem;
+}
+
+.partner-carousel  .partner-carousel-item img{
+  width: auto;
+  margin:0 auto;
+  height: 150px;
+  opacity: 0.6;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.partner-carousel  .partner-carousel-item:hover img{
+  opacity: 1;
+  -ms-filter: grayscale(0%);
+  filter: grayscale(0%);
+}

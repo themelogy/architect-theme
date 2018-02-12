@@ -1,0 +1,88 @@
+
+
+/* 3.3 Section About */
+
+
+
+.section-about{
+  padding:8rem 0 0;
+}
+
+.section-about-title{
+  margin-bottom: 5rem;
+}
+
+.dots-image{
+  display: inline-block;
+  position: relative;
+}
+
+.dots-image img{
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.dots-image .dots{
+  position: absolute;
+  left:-20%;
+  bottom: -15%;
+  width: 101%;
+  height: 57.2%;
+  background:url(../images/bg/dots.png) 0 0 repeat;
+}
+
+.experience-box{
+  position: relative;
+  white-space:nowrap;
+  margin:6rem 0;
+}
+
+
+
+@media (min-width: 992px){
+  .experience-box{
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width: 1200px){
+  .experience-box{
+    margin-top: 12.2rem;
+  }
+}
+
+.experience-border{
+  display: inline-block;
+  vertical-align: middle;
+  width: 12.15rem;
+  height: 12.15rem;
+  border:0.357rem solid $default-theme-color;
+}
+
+.experience-content{
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  left: -8rem;
+  top:0.2rem;
+}
+
+.experience-number{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 7.142rem;
+  line-height: 1;
+  font-weight: 600;
+  color: #000;
+}
+
+.experience-info{
+  display: inline-block;
+  vertical-align: middle;
+  margin:-1rem 0 0 0.8rem;
+  font-size: 1.57rem;
+  line-height: 1.181;
+  color: #000;
+}
+

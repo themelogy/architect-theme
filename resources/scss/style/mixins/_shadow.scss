@@ -1,0 +1,17 @@
+@mixin dropShadow($offX: 2, $offY: 2, $blur: 2, $rgba: rgba(0, 0, 0, 0.3), $hex: #B2B2B2) {
+  -webkit-filter: drop-shadow(#{$offX}px #{$offY}px #{$blur}px $rgba);
+  -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=" + $offX + ", OffY=" + $offY + ", Color='" + $hex + "')";
+  filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=" + $offX + ", OffY=" + $offY + ", Color='" + $hex + "')";
+}
+
+@mixin box-shadow($left, $top, $radius, $color, $inset:false) {
+  @if $inset {
+    box-shadow: inset $left $top $radius $color;
+    -webkit-box-shadow: inset $left $top $radius $color;
+    -moz-box-shadow: inset $left $top $radius $color;
+  } @else {
+    box-shadow: $left $top $radius $color;
+    -webkit-box-shadow: $left $top $radius $color;
+    -moz-box-shadow: $left $top $radius $color;
+  }
+}

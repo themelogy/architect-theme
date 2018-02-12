@@ -1,0 +1,27 @@
+{
+  "name": "architect",
+  "authors": [
+    "sagsoz06 <designer@visualturk.net>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "bootstrap-sass": "3.3.7",
+    "fullpage.js": "^2.9.6",
+    "owl.carousel": "^2.2.1",
+    "lg-zoom": "^1.1.0",
+    "lightgallery": "^1.6.7",
+    "lg-thumbnail": "^1.1.0"
+  }
+}

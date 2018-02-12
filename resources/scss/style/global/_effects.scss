@@ -1,0 +1,14 @@
+.threed-text{
+  @include three-d(#fff);
+}
+
+@for $i from 0 through 30 {
+  .z-depth-text-#{$i} {
+    text-shadow: 0 0 $i+px rgba(0,0,0,0.20);
+  }
+  .z-depth-#{$i} {
+    -webkit-box-shadow: 0 0 $i+px rgba(0,0,0,0.20);
+    -moz-box-shadow: 0 0 $i+px rgba(0,0,0,0.20);
+    box-shadow: 0 0 $i+px rgba(0,0,0,0.20);
+  }
+}

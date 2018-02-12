@@ -1,0 +1,36 @@
+@import "style/variables";
+@import "style/mixins/mixins";
+@import "style/global";
+@import "style/menu";
+@import "style/pages";
+@import "style/footer";
+@import "style/responsive";
+@import "style/plugins";
+
+.visible {
+  visibility: visible !important;
+}
+.bt-top {
+  position: fixed;
+  z-index: 100;
+  bottom: 4.2857rem;
+  right: 4.2857rem;
+  visibility: hidden;
+  a {
+    display: block;
+    padding: 20px;
+  }
+  i {
+    font-size: 4.2857rem;
+    color: $default-txt-color;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    &:hover {
+      color: $default-theme-color;
+    }
+  }
+}
+

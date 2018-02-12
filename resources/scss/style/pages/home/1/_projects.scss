@@ -1,0 +1,60 @@
+
+/* 3.4 Section Projects */
+.section-projects{
+  //padding-bottom: 8rem;
+}
+
+.filter-content{
+  position: relative;
+  overflow: hidden;
+}
+
+.filter{
+  list-style: none;
+  font-size: 1.142rem;
+  font-weight: 600;
+  color: $filter-link-color;
+  padding-left: 0;
+  margin:0;
+}
+
+.filter li{
+  margin:0.6rem 2.6rem 0 0 ;
+  display: inline-block;
+}
+
+.filter li:last-child{
+  margin-right: 0;
+}
+
+.filter li a{
+  color: inherit;
+}
+
+.filter li a:hover,
+.filter .active a{
+  color: $default-theme-color;
+  text-decoration: none;
+}
+
+.section-projects .filter-content{
+  margin:2rem 0 0 0;
+}
+
+.section-projects .filter{
+  margin: 0;
+}
+
+.section-projects .view-projects{
+  margin:0.85rem 0 0 0;
+}
+
+.view-projects{
+  display: inline-block;
+  color: #999999;
+}
+
+.view-projects:hover{
+  text-decoration: none;
+  color: $default-theme-color;
+}

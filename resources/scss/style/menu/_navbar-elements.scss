@@ -1,0 +1,119 @@
+/* 2.1 Navbar elements */
+.brand {
+  line-height: 1.6;
+  color: #000;
+  display: inline-block;
+  position: absolute;
+  z-index: 100;
+  img{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.65rem;
+    height: 3.5rem;
+  }
+}
+
+a.brand:hover,
+a.brand:focus{
+  text-decoration: none;
+  color: #000;
+}
+
+.brand-info{
+  display: inline-block;
+}
+
+.brand-name{
+  font-weight: 600;
+  font-size: 1.714rem;
+  line-height: 1;
+}
+
+.brand-text{
+  color: #999999;
+  font-size: 0.857rem;
+  font-weight: 300;
+  margin-top: -0.3rem;
+}
+
+.navbar-toggle{
+  display: block;
+  margin:0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.navbar-toggle .icon-bar{
+  background-color: $navbar-toggle-bg-color;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 30px;
+  height: 3px;
+}
+
+.navbar-toggle:hover .icon-bar{
+  background-color:  $default-theme-color;
+}
+
+.navbar .social-list{
+  float: right;
+  //margin-right: 10%;
+}
+
+.social-list{
+  overflow:hidden;
+}
+
+.social-list a{
+  float: left;
+  font-size: 1.428rem;
+  line-height: 1;
+  color: darken($navbar-link-color, 30%);
+  margin-left: 2rem;
+}
+
+.social-list a:first-child{
+  margin-left: 0;
+}
+
+.social-list a:hover{
+  color: $navbar-link-hover;
+  text-decoration: none;
+}
+
+.navbar-spacer{
+  float: right;
+  margin:-1rem 4.5rem 0;
+  width: 1px;
+  height: 3.3rem;
+  background-color: #e0e0e0;
+}
+
+.navbar-address{
+  float: right;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+
+/* 2.2 Navbar affix */
+
+
+.navbar.affix{
+  position: fixed;
+  background-color: $default-bg-color;
+  width: 100%;
+  @include box-shadow(0,0,65px,rgba(0,0,0,0.50));
+  @include gradient-horizontal($default-bg-color, lighten($default-bg-color, 10%));
+  @media screen and (min-width: 768px) {
+    .social-list {
+      display: block !important;
+    }
+  }
+}
+
+.navbar-toggle {
+  float: left;
+}

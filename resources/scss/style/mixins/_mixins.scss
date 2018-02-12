@@ -1,0 +1,34 @@
+@import "text";
+@import "shadow";
+@import "border";
+@import "background";
+@import "effects";
+
+@mixin link-hover($default:#ffffff) {
+  :hover, :active, :focus, :visited {
+    color: $default !important;
+  }
+}
+
+@mixin bg-hover($default:#ffffff) {
+  :hover, :active, :focus, :visited {
+    background-color: $default !important;
+  }
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin rotate($degrees) {
+  -moz-transform: rotate($degrees);
+  -o-transform: rotate($degrees);
+  -webkit-transform: rotate($degrees);
+}

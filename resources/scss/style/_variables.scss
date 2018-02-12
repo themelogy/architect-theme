@@ -1,0 +1,45 @@
+//Colors
+$theme-colors: (
+        red1: #BF263A,
+        red2: #D8877B,
+        black1: #221E20
+);
+
+$default-theme-color: map_get($theme-colors, red1);
+$default-reverse-color: map_get($theme-colors, black1);
+$default-second-color: map_get($theme-colors, red2);
+
+//General
+$default-bg-color: #2a2a2a;
+$default-txt-color: darken(white, 25%);
+$heading-color: #ebebeb;
+
+//Slider Arrow Bullet Link
+$slider-link-color: #fff;
+$slider-hover-color: $default-theme-color;
+
+//Header
+$navbar-bg-color: $default-bg-color;
+$navbar-txt-color: #fff;
+$navbar-toggle-bg-color: #ccc;
+$navbar-link-color: #fff;
+$navbar-link-hover: $default-theme-color;
+$menu-bg-color: lighten($default-bg-color, 5%);
+$menu-link-color: #ebebeb;
+$menu-link-hover: $default-theme-color;
+
+//Home
+$home-news-bg-hover: rgba($default-bg-color, 0.55);
+$filter-link-color: #fff;
+$home-news-txt-color: #fff;
+$project-bg-hover-color: rgba(0,0,0,0.50);
+$project-link-hover: #fff;
+$project-hover-title-color: #fff;
+
+//Footer
+$footer-bg-color: $default-bg-color;
+$footer-txt-color: #ccc;
+$footer-link-color: #ccc;
+$footer-link-hover: $default-theme-color;
+$footer-top-border-color: darken($default-bg-color, 10%);
+$footer-social-list-color: #ccc;

@@ -1,0 +1,55 @@
+.wrapper{
+  //padding-top:7rem;
+  overflow-x:hidden;
+}
+
+.boxed{
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
+}
+
+.boxed .container,
+.boxed .container-fluid{
+  padding: 0;
+  max-width: 100%;
+}
+
+.left-boxed{
+  left: 1.7rem;
+}
+
+.right-boxed{
+  right:1.7rem;
+}
+
+.section{
+  padding:5rem 0 0 0;
+}
+
+.section-title{
+  margin:0;
+}
+
+.section-title .link-arrow-2{
+  margin-top:1.05rem;
+}
+
+.section-subtitle{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.142rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $default-theme-color;
+  margin-bottom: 1rem;
+}
+
+/* 3.1 Jumbotron */
+.jumbotron{
+  position: relative;
+  overflow: hidden;
+  padding:0;
+  margin:0;
+  color: #fff;
+  background-color: #fff;
+}

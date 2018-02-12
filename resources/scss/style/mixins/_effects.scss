@@ -1,0 +1,23 @@
+@mixin blur-effect($default:5) {
+  -webkit-filter: blur($default+px);
+  -moz-filter: blur($default+px);
+  -o-filter: blur($default+px);
+  -ms-filter: blur($default+px);
+  filter: blur($default+px);
+}
+
+@mixin box-shadow($top, $left, $blur, $color: rgba(0,0,0,0.25), $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+.effect1 {
+  @include box-shadow(0,0,10px);
+}

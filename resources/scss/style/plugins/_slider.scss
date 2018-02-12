@@ -1,0 +1,11 @@
+.tp-shape {
+  background-color: $default-theme-color;
+}
+.tp-bullet {
+  width: 10px;
+  height: 10px;
+}
+.tp-bullet.selected,
+.tp-bullet:hover {
+  background: $default-theme-color;
+}
