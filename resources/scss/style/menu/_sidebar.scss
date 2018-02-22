@@ -25,8 +25,11 @@
   -o-transition: all 0.6s ease;
   transition: all 0.6s ease;
   .brand {
-    left: 15%;
+    left: $sidebar-left-padding-size;
     top: 3rem;
+  }
+  .social-list {
+    font-size: $sidebar-social-font-size;
   }
   //.menu-header {
   //  height: 120px;
@@ -48,8 +51,9 @@
 .close-menu{
   position: absolute;
   z-index: 2;
-  top: 3rem;
-  font-size: 1.6rem;
+  top: 1rem;
+  right: 1rem;
+  font-size: $menu-close-font-size;
   line-height: 1;
   color: $menu-link-color;
   cursor: pointer;
@@ -63,6 +67,7 @@
 }
 
 .menu .menu-lang{
+  font-size: $sidebar-lang-font-size;
   text-transform: uppercase;
   -webkit-transform: translateY(3rem);
   -ms-transform: translateY(3rem);
@@ -75,7 +80,7 @@
 
 .menu-lang a{
   display: inline-block;
-  margin-left: 1.5rem;
+  margin-left: 1.15rem;
   color: darken($menu-link-color, 20%);
 }
 
@@ -95,8 +100,9 @@
   left: 0;
   top:9rem;
   bottom:10.5rem;
-  padding-left: 15%;
+  padding-left: $sidebar-left-padding-size;
   padding-top: 10px;
+  padding-right: 10px;
   overflow-x:hidden;
   overflow-y:auto;
   -webkit-overflow-scrolling:touch;
@@ -104,7 +110,7 @@
   font-weight: 600;
   letter-spacing: -0.025rem;
   list-style: none;
-  margin:0;
+  margin:0 -10px 0 0;
   -webkit-transform: translateY(3rem);
   -ms-transform: translateY(3rem);
   -o-transform: translateY(3rem);
@@ -112,11 +118,34 @@
   -webkit-transition: transform 0.5s 0.6s ease, opacity 0.5s 0.6s ease;
   -o-transition: transform 0.5s 0.6s ease, opacity 0.5s 0.6s ease;
   transition: transform 0.5s 0.6s ease, opacity 0.5s 0.6s ease;
+  li {
+    display: block;
+    position: relative;
+  }
+  > li {
+    &.active {
+      > ul {
+        display: block;
+      }
+    }
+    > a {
+      &:before {
+        content: "\f105";
+        font-family: 'FontAwesome';
+        position: absolute;
+        font-weight: normal;
+        right: 0;
+        top: .5rem;
+        display: block;
+        font-size: $menu-font-size;
+      }
+    }
+  }
 }
 
 .menu-list li a{
   color: $menu-link-color;
-  font-size: 1.5rem;
+  font-size: $menu-font-size;
   font-weight: normal;
 }
 
@@ -132,7 +161,7 @@
 }
 
 .menu-list > li{
-  margin-top: 2.7rem;
+  margin-top: (1.25*strip-unit($menu-font-size))+rem;
 }
 
 .menu-list > li:first-child{
@@ -140,11 +169,52 @@
 }
 
 
-.menu-list ul{
+.menu-list ul {
   display: none;
   list-style: none;
   padding:0;
   margin: 0;
+  li {
+    padding-left: 15px;
+    &:before {
+      content: '';
+      width: 7px;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      top: 4px;
+      padding: 0;
+      display: block;
+      background-color: $default-txt-color;
+    }
+  }
+  ul {
+    padding: 0;
+    margin-top: -.5rem;
+    > li {
+      &:before {
+        content: '';
+        width: 22px;
+        height: 1px;
+        position: absolute;
+        left: -14px;
+        top: 4px;
+        padding: 0;
+        display: block;
+        background-color: $default-txt-color;
+      }
+    }
+  }
+  &:before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    display: block;
+    background-color: $default-txt-color;
+  }
 }
 
 .menu-list ul li{
@@ -153,12 +223,12 @@
 }
 
 .menu-list ul li:first-child{
-  margin-top:2.4rem;
+  margin-top:$menu-dropdown-margin-top-size;
 }
 
 .menu-footer{
   position: absolute;
-  left: 15%;
+  left: $sidebar-left-padding-size;
   bottom: 4rem;
 }
 
@@ -176,7 +246,7 @@
 .menu-footer .social-list a{
   color: $footer-social-list-color;
   margin:0;
-  margin-right:2.7rem;
+  margin-right: (1.5*strip-unit($sidebar-social-font-size))+rem;
 }
 
 .menu-footer .social-list a:last-child{
@@ -188,10 +258,11 @@
 }
 
 .menu-footer .copy{
+  font-size: $menu-copy-font-size;
   opacity: 0;
   display: none;
-  margin-top: 3.2rem;
-  color: darken($menu-link-color, 30%);
+  margin-top: $menu-copy-top-size;
+  color: $menu-copy-txt-color;
   line-height: 1.71rem;
   -webkit-transform: translateY(2rem);
   -ms-transform: translateY(2rem);
@@ -211,7 +282,7 @@
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0);
-  @include box-shadow(0,-20px,65px,rgba(0,0,0,0.50));
+  @include menu_shadow();
 }
 
 .menu-is-opened .menu .menu-lang,
@@ -226,7 +297,7 @@
 }
 
 .menu-is-opened .menu .menu-footer .copy{
-  font-size: 0.75rem;
+  font-size: $menu-copy-font-size;
 }
 
 .menu-is-closed .menu .menu-lang,

@@ -3,13 +3,11 @@
   	/*-------------------------------------------------------------------------------
 	  Detect mobile device 
 	-------------------------------------------------------------------------------*/
-	var mobileDevice = false;
-
+	var mobileDevice = true;
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 	  	$('html').addClass('mobile');
 	  	mobileDevice = true;
 	}
-
 	else{
 		$('html').addClass('no-mobile');
 		mobileDevice = false;
@@ -19,16 +17,13 @@
 	  Window load
 	-------------------------------------------------------------------------------*/
 	$(window).on('load', function(){
-
 		var wow = new WOW({
 		    offset: 150,
 		    mobile: false
 		  }
 		);
-
 		wow.init();
 	});
-
 	var navbar=$('.js-navbar:not(.navbar-fixed)');
 
 
@@ -63,15 +58,13 @@
 	/*-------------------------------------------------------------------------------
 	  Navbar 
 	-------------------------------------------------------------------------------*/
-
-
-
-	navbar.affix({
-	  offset: {
-	    top: 50
-	  }
-	});
-
+	if(!mobileDevice) {
+		navbar.affix({
+			offset: {
+				top: 50
+			}
+		});
+	}
 
 	navbar.on('affix.bs.affix', function() {
 		if (!navbar.hasClass('affix')){
@@ -81,7 +74,7 @@
 
 	navbar.on('affixed-top.bs.affix', function() {
 	  	navbar.removeClass('animated slideInDown');
-	  	
+
 	});
 
 	$('.nav-mobile-list li a[href="#"]').on('click',function(){
@@ -97,16 +90,25 @@
 	-------------------------------------------------------------------------------*/
 	$('.navbar-toggle').on('click',function(){
 		$('body').removeClass('menu-is-closed').addClass('menu-is-opened');
+		$('.navbar').stop().animate({'margin-top':'-7rem'}, 500);
 	});
 
 	$('.close-menu, .click-capture').on('click', function(){
 		$('body').removeClass('menu-is-opened').addClass('menu-is-closed');
 		$('.menu-list ul').slideUp(300);
+		$('.navbar').stop().animate({'margin-top':'0'}, 500);
 	});
 	var dropToggle =$('.menu-list > li').has('ul').children('a');
 
 	dropToggle.on('click',function(){
 		dropToggle.not(this).closest('li').find('ul').slideUp(200);
+		$(this).closest('li').children('ul').slideToggle(200);
+		return false;
+	});
+
+	var subDropToggle =$('.menu-list > li ul li').has('ul').children('a');
+	subDropToggle.on('click',function(){
+		subDropToggle.not(this).closest('li').find('ul').slideUp(200);
 		$(this).closest('li').children('ul').slideToggle(200);
 		return false;
 	});
@@ -242,33 +244,43 @@
 		-------------------------------------------------------------------------------*/
 	   $('.partner-carousel').owlCarousel({
 		    margin:30,
-		    smartSpeed:250,
 		    dots:false,
 		    responsiveRefreshRate:0,
 		    nav: false,
 		    navText: ['',''],
 		    autoplay:true,
-		    autoplayTimeout:5000,
+		   	center: false,
 		    autoplayHoverPause:true,
 		    loop: true,
 		    responsive:{
 		        0:{
-		            items:1
+		            items:1,
+					center: true
 		        },
 		        500:{
-		            items:3
+		            items:3,
+					autoWidth: true
 		        },
 				750:{
-					items:4
+					items:4,
+					autoWidth: true
 				},
 		        992:{
-		        	items:5
+		        	items:5,
+					autoWidth: true,
+					margin:40
 		        },
 		        1200:{
-		        	items:6
+		        	items:6,
+					autoWidth: true,
+					margin:50,
+					loop: true
 		        },
 				1600: {
-					items:7
+					items:7,
+					autoWidth: true,
+					loop: true,
+					margin:60
 				}
 		    }
 		});
@@ -336,25 +348,22 @@
 	 var $container=$('.js-isotope').each(function() {		
 		var $container = $(this);
 		$container.imagesLoaded( function(){
-			$container.isotope({		 
+			$container.isotope({
 				itemSelector: '.js-isotope-item',
 				percentPosition: true,
-				layoutMode: 'masonry',	
+				layoutMode: 'masonry',
 				masonry: {
-				  columnWidth: '.js-isotope-item'
-				}	
-			});	
+					columnWidth: '.js-isotope-item'
+				}
+			});
 		});
-    }); 
+    });
 
 
 
 	/*-------------------------------------------------------------------------------
 	  Project Sly Carousel
 	-------------------------------------------------------------------------------*/
-
-
-
 	var $frame  = $('.sly');
 		var $slidee = $frame.children('ul').eq(0);
 		var $wrap   = $frame.parent();
@@ -415,9 +424,6 @@
    /*-------------------------------------------------------------------------------
 	  Filter Carousel 
 	-------------------------------------------------------------------------------*/
-
-
-
 	$('.js-filter-carousel li a').on('click', function() {
 		$('.js-filter-carousel .active').removeClass('active');
 		$(this).closest('li').addClass('active');
@@ -544,8 +550,14 @@
 	}
 
 	$("body").niceScroll({
-		cursorcolor: "#BF263A",
-		cursorborder: "#BF263A"
+		cursorcolor: "#969696",
+		cursorborder: "#909090",
+		scrollspeed: 120,
+		mousescrollstep: 90,
+		autohidemode: false,
+		horizrailenabled: true,
+		preservenativescrolling: true,
+		cursordragontouch: false
 	});
 
 	$(window).scroll(function () {
@@ -561,4 +573,18 @@
 		$('html, body').animate({scrollTop: '0px'}, 800);
 	});
 
+	(function(){
+		var originalAddClassMethod = jQuery.fn.addClass;
+		var originalRemoveClassMethod = jQuery.fn.removeClass;
+		jQuery.fn.addClass = function(){
+			var result = originalAddClassMethod.apply( this, arguments );
+			jQuery(this).trigger('classChanged');
+			return result;
+		}
+		jQuery.fn.removeClass = function(){
+			var result = originalRemoveClassMethod.apply( this, arguments );
+			jQuery(this).trigger('classChanged');
+			return result;
+		}
+	})();
 })(jQuery);

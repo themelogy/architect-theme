@@ -9,29 +9,23 @@
 @endphp
 
 @section('content')
-    <main class="p-top-120 p-bot-100">
+    <main class="section-title">
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="title-hr"></div>
-                </div>
-                <div class="col-md-8 col-lg-6">
-                    <h1>{{ $page->title }}</h1>
+                <div class="col-md-12">
+                    <h1 class="title h-line">{{ $page->title }}</h1>
                 </div>
             </div>
         </div>
     </main>
 
-    <div class="content">
-        <div class="content-entry-image" style="background: url({{ $coverImage }}) no-repeat center center fixed"></div>
-        <div class="page-inner md-p-top-bot-40">
-            <section class="section about-info">
+    <div class="content m-bot-50">
+        <div class="page-inner">
+            <section class="section section-page">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="text-display-1">
-                                {!! $page->body !!}
-                            </div>
+                            {!! $page->body !!}
                         </div>
                     </div>
                 </div>

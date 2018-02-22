@@ -1,6 +1,62 @@
 /* 3.4.1 Projects Carousel */
 .project-carousel{
-  margin-top: 2.5rem;
+  ///margin-top: 2.5rem;
+  .project-item{
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    img{
+      width:100%;
+      -moz-transition: all 2s ease;
+      -webkit-transition: all 2s ease;
+      transition: all 2s ease;
+      filter: contrast(105%) brightness(105%);
+    }
+    &:hover {
+      img {
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+    &:hover .project-hover {
+      background-color: $project-bg-hover-color;
+    }
+    &:hover .project-hover {
+      .project-title{
+        position: relative;
+        color: $project-hover-title-color;
+        bottom:2rem;
+        -webkit-transform: translateY(2rem);
+        -ms-transform: translateY(2rem);
+        -o-transform: translateY(2rem);
+        transform: translateY(2rem);
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        a:hover {
+          color: $project-hover-title-color;
+        }
+      }
+    }
+    &:hover {
+      .project-hover .project-description{
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+        transform: translateY(0);
+        -webkit-transition: all 0.4s 0.2s ease;
+        -o-transition: all 0.4s 0.2s ease;
+        transition: all 0.4s 0.2s ease;
+      }
+      .link-arrow{
+        color: $project-link-hover;
+      }
+    }
+  }
 }
 
 .owl-nav{
@@ -73,27 +129,7 @@
   background-color: $default-theme-color;
 }
 
-.project-item{
-  position: relative;
-  overflow: hidden;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-  img{
-    width:100%;
-    -moz-transition: all 2s ease;
-    -webkit-transition: all 2s ease;
-    transition: all 2s ease;
-    filter: contrast(105%) brightness(105%);
-  }
-  &:hover {
-    img {
-      -moz-transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      transform: scale(1.1);
-    }
-  }
-}
+
 
 .item-shadow{
   position: relative;
@@ -138,6 +174,11 @@
   -webkit-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
+  .project-title{
+    position: absolute;
+    bottom: 5.5rem;
+    font-weight: 500;
+  }
 }
 
 .project-title{
@@ -145,16 +186,11 @@
   margin:0;
 }
 
-.project-hover .project-title{
-  position: absolute;
-  bottom: 5.5rem;
-
-}
-
 .project-description{
   opacity: 0;
   margin-top:12%;
-  line-height: 1.71;
+  line-height: $project-font-line-height;
+  font-size: $project-font-size;
   color: set_notification-text-color($default-theme-color);
   -webkit-transform: translateX(-1rem);
   -ms-transform: translateX(-1rem);
@@ -162,35 +198,73 @@
   transform: translateY(-1rem);
 }
 
-.project-item:hover .project-hover {
-  background-color: $project-bg-hover-color;
+
+
+.lg-backdrop {
+  background-color: rgba(0,0,0,0.75);
+}
+.lg-toolbar {
+  background-color: transparent;
 }
 
-.project-item:hover .project-hover .project-title{
-  position: relative;
-  color: $project-hover-title-color;
-  bottom:2rem;
-  -webkit-transform: translateY(2rem);
-  -ms-transform: translateY(2rem);
-  -o-transform: translateY(2rem);
-  transform: translateY(2rem);
-  -webkit-transition: transform 0.5s ease;
-  -o-transition: transform 0.5s ease;
-  transition: transform 0.5s ease;
-
+.slider-zoom {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  z-index: 999;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
 }
 
-.project-item:hover .project-hover .project-description{
-  opacity: 1;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  -o-transform: translateX(0);
-  transform: translateY(0);
-  -webkit-transition: all 0.4s 0.2s ease;
-  -o-transition: all 0.4s 0.2s ease;
-  transition: all 0.4s 0.2s ease;
+.slider-zoom i, .slider-zoom:before, .slider-zoom:after, .slider-zoom, .herolink {
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  transition: all 200ms linear;
 }
 
-.project-item:hover .link-arrow{
-  color: $project-link-hover;
+.slider-zoom:before, .slider-zoom:after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+}
+
+.slider-zoom:before {
+  top: 0;
+  left: 0;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+.slider-zoom:after {
+  bottom: 0;
+  right: 0;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.slider-zoom:hover:before {
+  top: -5px;
+  left: -5px;
+}
+
+.slider-zoom:hover:after {
+  bottom: -5px;
+  right: -5px;
+}
+
+.slider-zoom:hover i {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }

@@ -1,0 +1,25 @@
+
+/* Scrollbar */
+.scrollbar {
+  margin: 6.8rem 0 0;
+  height: 1px;
+  background: #dae5e6;
+  line-height: 0;
+}
+
+.scrollbar .handle {
+  position: relative;
+  top:-2px;
+  width: 100px;
+  height: 3px;
+  background: #999999;
+  cursor: pointer;
+}
+.scrollbar .handle .mousearea {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+

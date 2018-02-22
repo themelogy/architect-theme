@@ -1,26 +1,29 @@
 
 /* 3.6 Section Partners */
-
-
-
 .partner-carousel{
-  //margin-top: 10.28rem;
+  padding: 1rem 0;
 }
 
-.partner-carousel  .partner-carousel-item img{
-  width: auto;
-  margin:0 auto;
-  height: 150px;
-  opacity: 0.6;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  -ms-filter: grayscale(100%);
-  filter: grayscale(100%);
+.partner-carousel  .partner-carousel-item {
+  display: table;
+  text-align: center;
+  img {
+    //padding: 0 20px;
+    width: auto;
+    max-height: 50px;
+    //margin:10px auto;
+    opacity: 0.6;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    filter: grayscale(100%) opacity(75%);
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
 }
 
 .partner-carousel  .partner-carousel-item:hover img{
   opacity: 1;
-  -ms-filter: grayscale(0%);
-  filter: grayscale(0%);
+  filter: grayscale(0) opacity(100%);
 }

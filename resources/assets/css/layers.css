@@ -2509,7 +2509,7 @@ website:   	http://www.themepunch.com
 .revtp-searchform input[type="text"],
 .revtp-searchform input[type="email"],
 .revtp-form input[type="text"],
-.revtp-form input[type="email"]{ 	
+.revtp-form input[type="email"]{
 	font-family: "Arial", sans-serif;
     font-size: 15px;
     color: #000;
@@ -2519,15 +2519,15 @@ website:   	http://www.themepunch.com
     cursor: text;
     border: 0;
     width: 400px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;
     -ms-transition: background-color 0.5s;
     transition: background-color 0.5s;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 
@@ -2539,13 +2539,13 @@ website:   	http://www.themepunch.com
     font-weight: 800;
     font-style: normal;
     font-family: Raleway;
-    padding: 10px 0px 10px 0;
+    padding: 10px 0 10px 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.BigBold-SubTitle,
@@ -2556,13 +2556,13 @@ website:   	http://www.themepunch.com
     font-weight: 500;
     font-style: normal;
     font-family: Raleway;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left;
     letter-spacing: 1px
 }
@@ -2580,7 +2580,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(255, 255, 255, 0.50);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0 0 0 0;
     text-align: left;
     letter-spacing: 1px
 }
@@ -2592,7 +2592,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(255, 255, 255, 1.00);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0px 0px 0px 0px
+    border-radius: 0 0 0 0
 }
 .tp-caption.FoodCarousel-Content,
 .FoodCarousel-Content {
@@ -2608,7 +2608,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(41, 46, 49, 1.00);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0 0 0 0px;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.FoodCarousel-Button,
@@ -2625,7 +2625,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(41, 46, 49, 1.00);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0 0 0 0;
     text-align: left;
     letter-spacing: 1px
 }
@@ -2637,7 +2637,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(41, 46, 49, 1.00);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0px 0px 0px 0px
+    border-radius: 0 0 0 0
 }
 .tp-caption.FoodCarousel-CloseButton,
 .FoodCarousel-CloseButton {
@@ -2680,8 +2680,8 @@ website:   	http://www.themepunch.com
     background-color: rgba(0, 0, 0, 0.35);
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     letter-spacing: 2px;
     text-align: left
 }
@@ -2698,8 +2698,8 @@ website:   	http://www.themepunch.com
     background-color: rgba(0, 0, 0, 1.00);
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.Travel-BigCaption,
@@ -2710,13 +2710,13 @@ website:   	http://www.themepunch.com
     font-weight: 400;
     font-style: normal;
     font-family: Roboto;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.Travel-SmallCaption,
@@ -2727,13 +2727,13 @@ website:   	http://www.themepunch.com
     font-weight: 300;
     font-style: normal;
     font-family: Roboto;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.Travel-CallToAction,
@@ -2774,13 +2774,13 @@ website:   	http://www.themepunch.com
     font-weight: 800;
     font-style: normal;
     font-family: Raleway;
-    padding: 0px 0px 0px 0;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.RotatingWords-Button,
@@ -2797,7 +2797,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(255, 255, 255, 0.15);
     border-style: solid;
     border-width: 2px;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0 0 0 0;
     text-align: left;
     letter-spacing: 3px
 }
@@ -2809,7 +2809,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(255, 255, 255, 1.00);
     border-style: solid;
     border-width: 2px;
-    border-radius: 0px 0px 0px 0px
+    border-radius: 0 0 0 0
 }
 .tp-caption.RotatingWords-SmallText,
 .RotatingWords-SmallText {
@@ -2819,13 +2819,13 @@ website:   	http://www.themepunch.com
     font-weight: 400;
     font-style: normal;
     font-family: Raleway;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left;
     text-shadow: none
 }
@@ -2841,13 +2841,13 @@ website:   	http://www.themepunch.com
     font-weight: 600;
     font-style: normal;
     font-family: Raleway;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.ContentZoom-SmallSubtitle,
@@ -2858,13 +2858,13 @@ website:   	http://www.themepunch.com
     font-weight: 600;
     font-style: normal;
     font-family: Raleway;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.ContentZoom-SmallIcon,
@@ -2880,8 +2880,8 @@ website:   	http://www.themepunch.com
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.ContentZoom-SmallIcon:hover,
@@ -2891,8 +2891,8 @@ website:   	http://www.themepunch.com
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px
+    border-width: 0;
+    border-radius: 0 0 0 0
 }
 .tp-caption.ContentZoom-DetailTitle,
 .ContentZoom-DetailTitle {
@@ -2902,13 +2902,13 @@ website:   	http://www.themepunch.com
     font-weight: 500;
     font-style: normal;
     font-family: Raleway;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.ContentZoom-DetailSubTitle,
@@ -2919,13 +2919,13 @@ website:   	http://www.themepunch.com
     font-weight: 500;
     font-style: normal;
     font-family: Raleway;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.ContentZoom-DetailContent,
@@ -2936,13 +2936,13 @@ website:   	http://www.themepunch.com
     font-weight: 500;
     font-style: normal;
     font-family: Raleway;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.ContentZoom-Button,
@@ -2959,7 +2959,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(41, 46, 49, 0.50);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0 0 0 0;
     text-align: left;
     letter-spacing: 1px
 }
@@ -2971,7 +2971,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(41, 46, 49, 1.00);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0px 0px 0px 0px
+    border-radius: 0 0 0 0
 }
 .tp-caption.ContentZoom-ButtonClose,
 .ContentZoom-ButtonClose {
@@ -3014,8 +3014,8 @@ website:   	http://www.themepunch.com
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.Newspaper-Subtitle,
@@ -3026,13 +3026,13 @@ website:   	http://www.themepunch.com
     font-weight: 900;
     font-style: normal;
     font-family: Roboto;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.Newspaper-Button,
@@ -3049,7 +3049,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(255, 255, 255, 0.25);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0 0 0 0;
     letter-spacing: 2px;
     text-align: left
 }
@@ -3061,7 +3061,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(255, 255, 255, 1.00);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0px 0px 0px 0px
+    border-radius: 0 0 0 0
 }
 .tp-caption.rtwhitemedium,
 .rtwhitemedium {
@@ -3070,7 +3070,7 @@ website:   	http://www.themepunch.com
     color: rgb(255, 255, 255);
     text-decoration: none;
     background-color: transparent;
-    border-width: 0px;
+    border-width: 0;
     border-color: rgb(0, 0, 0);
     border-style: none;
     text-shadow: none
@@ -3084,7 +3084,7 @@ website:   	http://www.themepunch.com
 }
 
 .revtp-searchform input[type="submit"],
-.revtp-form input[type="submit"] {	
+.revtp-form input[type="submit"] {
 	font-family: "Arial", sans-serif;
     line-height: 46px;
     letter-spacing: 1px;
@@ -3095,9 +3095,9 @@ website:   	http://www.themepunch.com
     border: 0;
     background: #009aee;
     color: #fff;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 
 .tp-caption.Twitter-Content a,
@@ -3116,14 +3116,14 @@ website:   	http://www.themepunch.com
         font-weight: 700;
         font-style: normal;
         font-family: Roboto Condensed;
-        padding: 0px 0px 10px 0px;
+        padding: 0 0 10px 0;
         text-decoration: none;
         text-align: left;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0px 0px 0px 0px;
+        border-width: 0;
+        border-radius: 0 0 0 0;
         letter-spacing: 5px
     }
     .tp-caption.Concept-SubTitle,
@@ -3134,14 +3134,14 @@ website:   	http://www.themepunch.com
         font-weight: 700;
         font-style: italic;
         font-family: Playfair Display;
-        padding: 0px 0px 10px 0px;
+        padding: 0 0 10px 0;
         text-decoration: none;
         text-align: left;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0px 0px 0px 0px
+        border-width: 0;
+        border-radius: 0 0 0 0
     }
     .tp-caption.Concept-Content,
     .Concept-Content {
@@ -3151,14 +3151,14 @@ website:   	http://www.themepunch.com
         font-weight: 400;
         font-style: normal;
         font-family: Roboto Condensed;
-        padding: 0px 0px 0px 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         text-align: center;
         background-color: rgba(0, 0, 0, 0);
         border-color: rgba(255, 255, 255, 1.00);
         border-style: none;
         border-width: 2px;
-        border-radius: 0px 0px 0px 0px
+        border-radius: 0 0 0 0
     }
     .tp-caption.Concept-MoreBtn,
     .Concept-MoreBtn {
@@ -3174,7 +3174,7 @@ website:   	http://www.themepunch.com
         background-color: transparent;
         border-color: rgba(255, 255, 255, 0);
         border-style: solid;
-        border-width: 0px;
+        border-width: 0;
         border-radius: 50px 50px 50px 50px;
         letter-spacing: 1px;
         text-align: left
@@ -3186,7 +3186,7 @@ website:   	http://www.themepunch.com
         background-color: rgba(255, 255, 255, 0.15);
         border-color: rgba(255, 255, 255, 0);
         border-style: solid;
-        border-width: 0px;
+        border-width: 0;
         border-radius: 50px 50px 50px 50px
     }
     .tp-caption.Concept-LessBtn,
@@ -3203,7 +3203,7 @@ website:   	http://www.themepunch.com
         background-color: rgba(0, 0, 0, 1.00);
         border-color: rgba(255, 255, 255, 0);
         border-style: solid;
-        border-width: 0px;
+        border-width: 0;
         border-radius: 50px 50px 50px 50px;
         letter-spacing: 1px;
         text-align: left
@@ -3215,7 +3215,7 @@ website:   	http://www.themepunch.com
         background-color: rgba(255, 255, 255, 1.00);
         border-color: rgba(255, 255, 255, 0);
         border-style: solid;
-        border-width: 0px;
+        border-width: 0;
         border-radius: 50px 50px 50px 50px
     }
     .tp-caption.Concept-SubTitle-Dark,
@@ -3226,14 +3226,14 @@ website:   	http://www.themepunch.com
         font-weight: 700;
         font-style: italic;
         font-family: Playfair Display;
-        padding: 0px 0px 10px 0px;
+        padding: 0 0 10px 0;
         text-decoration: none;
         text-align: left;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0px 0px 0px 0px
+        border-width: 0;
+        border-radius: 0 0 0 0
     }
     .tp-caption.Concept-Title-Dark,
     .Concept-Title-Dark {
@@ -3243,14 +3243,14 @@ website:   	http://www.themepunch.com
         font-weight: 700;
         font-style: normal;
         font-family: Roboto Condensed;
-        padding: 0px 0px 10px 0px;
+        padding: 0 0 10px 0;
         text-decoration: none;
         text-align: center;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0px 0px 0px 0px;
+        border-width: 0;
+        border-radius: 0 0 0 0;
         letter-spacing: 5px
     }
     .tp-caption.Concept-MoreBtn-Dark,
@@ -3267,7 +3267,7 @@ website:   	http://www.themepunch.com
         background-color: transparent;
         border-color: rgba(255, 255, 255, 0);
         border-style: solid;
-        border-width: 0px;
+        border-width: 0;
         border-radius: 50px 50px 50px 50px;
         letter-spacing: 1px;
         text-align: left
@@ -3279,7 +3279,7 @@ website:   	http://www.themepunch.com
         background-color: rgba(0, 0, 0, 1.00);
         border-color: rgba(255, 255, 255, 0);
         border-style: solid;
-        border-width: 0px;
+        border-width: 0;
         border-radius: 50px 50px 50px 50px
     }
     .tp-caption.Concept-Content-Dark,
@@ -3290,14 +3290,14 @@ website:   	http://www.themepunch.com
         font-weight: 400;
         font-style: normal;
         font-family: Roboto Condensed;
-        padding: 0px 0px 0px 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         text-align: center;
         background-color: rgba(0, 0, 0, 0);
         border-color: rgba(255, 255, 255, 1.00);
         border-style: none;
         border-width: 2px;
-        border-radius: 0px 0px 0px 0px
+        border-radius: 0 0 0 0
     }
     .tp-caption.Concept-Notice,
     .Concept-Notice {
@@ -3307,14 +3307,14 @@ website:   	http://www.themepunch.com
         font-weight: 400;
         font-style: normal;
         font-family: Roboto Condensed;
-        padding: 0px 0px 0px 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         text-align: center;
         background-color: rgba(0, 0, 0, 0);
         border-color: rgba(255, 255, 255, 1.00);
         border-style: none;
         border-width: 2px;
-        border-radius: 0px 0px 0px 0px;
+        border-radius: 0 0 0 0;
         letter-spacing: 2px
     }
     .tp-caption.Concept-Content a,
@@ -3352,14 +3352,14 @@ website:   	http://www.themepunch.com
         font-weight: 400;
         font-style: normal;
         font-family: Playfair Display;
-        padding: 0px 0px 0px 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         text-align: center;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0px 0px 0px 0px
+        border-width: 0;
+        border-radius: 0 0 0 0
     }
     .tp-caption.Creative-SubTitle,
     .Creative-SubTitle {
@@ -3369,14 +3369,14 @@ website:   	http://www.themepunch.com
         font-weight: 400;
         font-style: normal;
         font-family: Lato;
-        padding: 0px 0px 0px 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         text-align: center;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0px 0px 0px 0px;
+        border-width: 0;
+        border-radius: 0 0 0 0;
         letter-spacing: 2px
     }
     .tp-caption.Creative-Button,
@@ -3394,7 +3394,7 @@ website:   	http://www.themepunch.com
         border-color: rgba(205, 176, 131, 0.25);
         border-style: solid;
         border-width: 1px;
-        border-radius: 0px 0px 0px 0px;
+        border-radius: 0 0 0 0;
         letter-spacing: 2px
     }
     .tp-caption.Creative-Button:hover,
@@ -3405,7 +3405,7 @@ website:   	http://www.themepunch.com
         border-color: rgba(205, 176, 131, 1.00);
         border-style: solid;
         border-width: 1px;
-        border-radius: 0px 0px 0px 0px
+        border-radius: 0 0 0 0
     }
 
 .tp-caption.subcaption,
@@ -3416,22 +3416,22 @@ website:   	http://www.themepunch.com
         font-weight: 400;
         font-style: normal;
         font-family: roboto;
-        padding: 0 0 0 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         background-color: transparent;
         border-color: rgba(0, 0, 0, 1.00);
         border-style: none;
-        border-width: 0px;
-        border-radius: 0 0 0 0px;
+        border-width: 0;
+        border-radius: 0 0 0 0;
         text-shadow: none;
         text-align: left
     }
     .tp-caption.RedDot,
     .RedDot {
-        color: rgba(0, 0, 0, 1.00);        
+        color: rgba(0, 0, 0, 1.00);
         font-weight: 400;
-        font-style: normal;        
-        padding: 0px 0px 0px 0px;
+        font-style: normal;
+        padding: 0 0 0 0;
         text-decoration: none;
         text-align: left;
         background-color: rgba(213, 0, 0, 1.00);
@@ -3459,14 +3459,14 @@ website:   	http://www.themepunch.com
         font-weight: 400;
         font-style: normal;
         font-family: Playfair Display;
-        padding: 0px 0px 0px 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         text-align: left;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0px 0px 0px 0px
+        border-width: 0;
+        border-radius: 0 0 0 0
     }
     .tp-caption.SlidingOverlays-Title,
     .SlidingOverlays-Title {
@@ -3476,14 +3476,14 @@ website:   	http://www.themepunch.com
         font-weight: 400;
         font-style: normal;
         font-family: Playfair Display;
-        padding: 0px 0px 0px 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         text-align: left;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0px 0px 0px 0px
+        border-width: 0;
+        border-radius: 0 0 0 0
     }
 
      .tp-caption.Woo-TitleLarge,
@@ -3494,13 +3494,13 @@ website:   	http://www.themepunch.com
         font-weight: 400;
         font-style: normal;
         font-family: Playfair Display;
-        padding: 0 0 0 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0 0 0 0px;
+        border-width: 0;
+        border-radius: 0 0 0 0;
         text-align: center;
         type: text
     }
@@ -3512,13 +3512,13 @@ website:   	http://www.themepunch.com
         font-weight: 300;
         font-style: normal;
         font-family: Roboto;
-        padding: 0 0 0 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0 0 0 0px;
+        border-width: 0;
+        border-radius: 0 0 0 0;
         text-align: left;
         type: text
     }
@@ -3530,13 +3530,13 @@ website:   	http://www.themepunch.com
         font-weight: 300;
         font-style: normal;
         font-family: Roboto;
-        padding: 0 0 0 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0 0 0 0px;
+        border-width: 0;
+        border-radius: 0 0 0 0;
         text-align: center;
         letter-spacing: 2px;
         type: text
@@ -3549,13 +3549,13 @@ website:   	http://www.themepunch.com
         font-weight: 700;
         font-style: normal;
         font-family: Roboto;
-        padding: 0 0 0 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0 0 0 0px;
+        border-width: 0;
+        border-radius: 0 0 0 0;
         text-align: center;
         type: text
     }
@@ -3623,13 +3623,13 @@ website:   	http://www.themepunch.com
         font-weight: 400;
         font-style: normal;
         font-family: Playfair Display;
-        padding: 0 0 0 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0 0 0 0px;
+        border-width: 0;
+        border-radius: 0 0 0 0;
         text-align: center;
         type: text
     }
@@ -3641,13 +3641,13 @@ website:   	http://www.themepunch.com
         font-weight: 300;
         font-style: normal;
         font-family: Roboto;
-        padding: 0 0 0 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0 0 0 0px;
+        border-width: 0;
+        border-radius: 0 0 0 0;
         text-align: center;
         letter-spacing: 2px;
         type: text
@@ -3660,13 +3660,13 @@ website:   	http://www.themepunch.com
         font-weight: 700;
         font-style: normal;
         font-family: Roboto;
-        padding: 0 0 0 0px;
+        padding: 0 0 0 0;
         text-decoration: none;
         background-color: transparent;
         border-color: transparent;
         border-style: none;
-        border-width: 0px;
-        border-radius: 0 0 0 0px;
+        border-width: 0;
+        border-radius: 0 0 0 0;
         text-align: center;
         type: text
     }
@@ -3741,8 +3741,8 @@ website:   	http://www.themepunch.com
         background-color: rgba(0, 0, 0, 0.50);
         border-color: rgba(255, 255, 255, 0);
         border-style: solid;
-        border-width: 0px;
-        border-radius: 0px 0px 0px 0px;
+        border-width: 0;
+        border-radius: 0 0 0 0;
         letter-spacing: 3px;
         text-align: left
     }
@@ -3753,8 +3753,8 @@ website:   	http://www.themepunch.com
         background-color: rgba(0, 0, 0, 1.00);
         border-color: rgba(255, 255, 255, 0);
         border-style: solid;
-        border-width: 0px;
-        border-radius: 0px 0px 0px 0px
+        border-width: 0;
+        border-radius: 0 0 0 0
     }
 
     .tp-caption.Agency-Title,
@@ -3765,13 +3765,13 @@ website:   	http://www.themepunch.com
     font-weight: 900;
     font-style: normal;
     font-family: lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left;
     letter-spacing: 10px
 }
@@ -3783,13 +3783,13 @@ website:   	http://www.themepunch.com
     font-weight: 400;
     font-style: italic;
     font-family: Georgia, serif;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center
 }
 .tp-caption.Agency-PlayBtn,
@@ -3800,7 +3800,7 @@ website:   	http://www.themepunch.com
     font-weight: 500;
     font-style: normal;
     font-family: Roboto;
-    padding: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: rgba(255, 255, 255, 1.00);
@@ -3828,13 +3828,13 @@ website:   	http://www.themepunch.com
     font-weight: 900;
     font-style: normal;
     font-family: lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left;
     letter-spacing: 5px
 }
@@ -3846,7 +3846,7 @@ website:   	http://www.themepunch.com
     font-weight: 400;
     font-style: normal;
     font-family: Georgia, serif;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: rgba(51, 51, 51, 1.00);
@@ -3874,12 +3874,12 @@ website:   	http://www.themepunch.com
     font-weight: 500;
     font-style: normal;
     font-family: Roboto;
-    padding: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0);
     border-style: none;
-    border-width: 0px;
+    border-width: 0;
     border-radius: 100px 100px 100px 100px;
     text-align: center
 }
@@ -3890,7 +3890,7 @@ website:   	http://www.themepunch.com
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0);
     border-style: none;
-    border-width: 0px;
+    border-width: 0;
     border-radius: 100px 100px 100px 100px;
     cursor: pointer
 }
@@ -3903,13 +3903,13 @@ website:   	http://www.themepunch.com
     font-weight: 400;
     font-style: normal;
     font-family: Georgia, serif;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left;
     letter-spacing: 10px
 }
@@ -3921,13 +3921,13 @@ website:   	http://www.themepunch.com
     font-weight: 400;
     font-style: normal;
     font-family: Georgia, serif;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.Dining-BtnLight,
@@ -3944,7 +3944,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(255, 255, 255, 0.25);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0 0 0 0;
     text-align: left;
     letter-spacing: 2px
 }
@@ -3956,7 +3956,7 @@ website:   	http://www.themepunch.com
     border-color: rgba(255, 255, 255, 1.00);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0px 0px 0px 0px
+    border-radius: 0 0 0 0
 }
 .tp-caption.Dining-Social,
 .Dining-Social {
@@ -3966,7 +3966,7 @@ website:   	http://www.themepunch.com
     font-weight: 400;
     font-style: normal;
     font-family: Georgia, serif;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.25);
@@ -3993,14 +3993,14 @@ tp-caption.Team-Thumb,
     line-height: 22px;
     font-weight: 400;
     font-style: normal;
-    font-family: Arial;
-    padding: 0 0 0 0px;
+    font-family: Arial, sans-serif;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.Team-Thumb:hover,
@@ -4010,8 +4010,8 @@ tp-caption.Team-Thumb,
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     cursor: pointer
 }
 .tp-caption.Team-Name,
@@ -4021,14 +4021,13 @@ tp-caption.Team-Thumb,
     line-height: 70px;
     font-weight: 900;
     font-style: normal;
-    font-family: Roboto;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.Team-Position,
@@ -4039,13 +4038,13 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Georgia, serif;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.Team-Description,
@@ -4056,13 +4055,13 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Roboto;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.Team-Social,
@@ -4073,13 +4072,13 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Arial;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center
 }
 .tp-caption.Team-Social:hover,
@@ -4089,8 +4088,8 @@ tp-caption.Team-Thumb,
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0px 0px 0px 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     cursor: pointer
 }
 
@@ -4102,12 +4101,12 @@ tp-caption.Team-Thumb,
     font-weight: 500;
     font-style: normal;
     font-family: Roboto;
-    padding: 0px 0px 0px 7px;
+    padding: 0 0 0 7px;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 1.00);
     border-color: rgba(0, 0, 0, 1.00);
     border-style: solid;
-    border-width: 0px;
+    border-width: 0;
     border-radius: 100px 100px 100px 100px;
     text-align: center
 }
@@ -4118,7 +4117,7 @@ tp-caption.Team-Thumb,
     background-color: rgba(255, 255, 255, 1.00);
     border-color: rgba(0, 0, 0, 1.00);
     border-style: solid;
-    border-width: 0px;
+    border-width: 0;
     border-radius: 100px 100px 100px 100px;
     cursor: pointer
 }
@@ -4130,13 +4129,13 @@ tp-caption.Team-Thumb,
     font-weight: 900;
     font-style: normal;
     font-family: Lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left;
     letter-spacing: 10px
 }
@@ -4148,13 +4147,13 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: italic;
     font-family: Georgia, serif;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center
 }
 .tp-caption.VideoPlayer-Social,
@@ -4165,13 +4164,13 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Arial;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center
 }
 .tp-caption.VideoPlayer-Social:hover,
@@ -4181,8 +4180,8 @@ tp-caption.Team-Thumb,
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0px 0px 0px 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     cursor: pointer
 }
 .tp-caption.VideoControls-Mute,
@@ -4193,12 +4192,12 @@ tp-caption.Team-Thumb,
     font-weight: 500;
     font-style: normal;
     font-family: Roboto;
-    padding: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 1.00);
     border-color: rgba(0, 0, 0, 1.00);
     border-style: solid;
-    border-width: 0px;
+    border-width: 0;
     border-radius: 100px 100px 100px 100px;
     text-align: center
 }
@@ -4209,7 +4208,7 @@ tp-caption.Team-Thumb,
     background-color: rgba(255, 255, 255, 1.00);
     border-color: rgba(0, 0, 0, 1.00);
     border-style: solid;
-    border-width: 0px;
+    border-width: 0;
     border-radius: 100px 100px 100px 100px;
     cursor: pointer
 }
@@ -4221,12 +4220,12 @@ tp-caption.Team-Thumb,
     font-weight: 500;
     font-style: normal;
     font-family: Roboto;
-    padding: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 1.00);
     border-color: rgba(0, 0, 0, 1.00);
     border-style: solid;
-    border-width: 0px;
+    border-width: 0;
     border-radius: 100px 100px 100px 100px;
     text-align: center
 }
@@ -4237,7 +4236,7 @@ tp-caption.Team-Thumb,
     background-color: rgba(255, 255, 255, 1.00);
     border-color: rgba(0, 0, 0, 1.00);
     border-style: solid;
-    border-width: 0px;
+    border-width: 0;
     border-radius: 100px 100px 100px 100px;
     cursor: pointer
  }
@@ -4252,38 +4251,32 @@ tp-caption.Team-Thumb,
     line-height: 40px;
     font-weight: 400;
     font-style: normal;
-    font-family: Lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: left;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
-    text-align: left;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     letter-spacing: 5px
 }
 .tp-caption.SleekLanding-ButtonBG,
 .SleekLanding-ButtonBG {
     color: rgba(0, 0, 0, 1.00);
-    font-size: px;
-    line-height: px;
     font-weight: 700;
     font-style: normal;
-    font-family: ;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: left;
     background-color: rgba(255, 255, 255, 0.10);
     border-color: rgba(0, 0, 0, 0);
     border-style: solid;
-    border-width: 0px;
+    border-width: 0;
     border-radius: 5px 5px 5px 5px;
-    text-align: left;
-    -webkit-box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: inset 0px 2px 0px 0px rgba(0, 0, 0, 0.15)
+    -webkit-box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 2px 0 0 rgba(0, 0, 0, 0.15)
 }
 .tp-caption.SleekLanding-SmallTitle,
 .SleekLanding-SmallTitle {
@@ -4292,16 +4285,14 @@ tp-caption.Team-Thumb,
     line-height: 50px;
     font-weight: 900;
     font-style: normal;
-    font-family: Lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: left;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
-    text-align: left;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     letter-spacing: 2px
 }
 .tp-caption.SleekLanding-BottomText,
@@ -4312,14 +4303,14 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: left;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.SleekLanding-Social,
@@ -4330,14 +4321,14 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Arial;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center
 }
 .tp-caption.SleekLanding-Social:hover,
@@ -4347,8 +4338,8 @@ tp-caption.Team-Thumb,
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     cursor: pointer
 }
 #rev_slider_429_1_wrapper .tp-loader.spinner2 {
@@ -4366,13 +4357,13 @@ tp-caption.Team-Thumb,
     font-weight: 300;
     font-style: normal;
     font-family: Roboto;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     letter-spacing: 3px;
     text-align: left
 }
@@ -4384,13 +4375,13 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Playfair Display;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.PostSlider-Content,
@@ -4401,13 +4392,13 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Roboto;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.PostSlider-Button,
@@ -4424,7 +4415,7 @@ tp-caption.Team-Thumb,
     border-color: rgba(0, 0, 0, 1.00);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.PostSlider-Button:hover,
@@ -4435,7 +4426,7 @@ tp-caption.Team-Thumb,
     border-color: rgba(0, 0, 0, 1.00);
     border-style: solid;
     border-width: 1px;
-    border-radius: 0px 0px 0px 0px;
+    border-radius: 0 0 0 0;
     cursor: pointer
 }
 
@@ -4452,13 +4443,13 @@ tp-caption.Team-Thumb,
     font-weight:900;
     font-style:normal;
     font-family:Lato;
-    padding:0 0 0 0px;
+    padding:0 0 0 0;
     text-decoration:none;
     background-color:transparent;
     border-color:transparent;
     border-style:none;
     border-width:0px;
-    border-radius:0 0 0 0px;
+    border-radius:0 0 0 0;
     text-align:left;
     letter-spacing:10px
 }
@@ -4470,13 +4461,13 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: italic;
     font-family: Georgia, serif;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.LandingPage-Button,
@@ -4487,13 +4478,13 @@ tp-caption.Team-Thumb,
     font-weight: 500;
     font-style: normal;
     font-family: Roboto;
-    padding: 0px 35px 0px 35px;
+    padding: 0 35px 0 35px;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 1.00);
     border-color: rgba(0, 0, 0, 1.00);
     border-style: solid;
-    border-width: 0px;
-    border-radius: 0px 0px 0px 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left;
     letter-spacing: 3px
 }
@@ -4504,8 +4495,8 @@ tp-caption.Team-Thumb,
     background-color: rgba(255, 255, 255, 1.00);
     border-color: rgba(0, 0, 0, 1.00);
     border-style: solid;
-    border-width: 0px;
-    border-radius: 0px 0px 0px 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     cursor: pointer
 }
 .tp-caption.App-Content a,
@@ -4525,14 +4516,14 @@ tp-caption.Team-Thumb,
     font-weight: 700;
     font-style: normal;
     font-family: Oswald;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: left;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.Twitter-Content a,
@@ -4556,14 +4547,14 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center;
     letter-spacing: 1px
 }
@@ -4581,8 +4572,8 @@ tp-caption.Team-Thumb,
     background-color: rgba(0, 154, 238, 1.00);
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.ComingSoon-Count,
@@ -4593,14 +4584,14 @@ tp-caption.Team-Thumb,
     font-weight: 900;
     font-style: normal;
     font-family: Lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: left;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.ComingSoon-CountUnit,
@@ -4611,14 +4602,14 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center
 }
 .tp-caption.ComingSoon-NotifyMe,
@@ -4629,14 +4620,14 @@ tp-caption.Team-Thumb,
     font-weight: 600;
     font-style: normal;
     font-family: Lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center
 }
 
@@ -4650,15 +4641,15 @@ tp-caption.Team-Thumb,
     cursor: text;
     border: 1px solid #fff;
     width: 400px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;
     -ms-transition: background-color 0.5s;
     transition: background-color 0.5s;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 #mc_embed_signup input#mce-EMAIL[type="email"]:focus {
     background-color: #fff;
@@ -4677,9 +4668,9 @@ tp-caption.Team-Thumb,
     border: 1px solid #009aee;
     background: #009aee;
     color: #fff;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 #mc_embed_signup input#mc-embedded-subscribe:hover {
     background: #0083d4;
@@ -4697,14 +4688,14 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center;
     letter-spacing: 6px
 }
@@ -4716,14 +4707,14 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center
 }
 .tp-caption.Agency-SmallLink,
@@ -4734,14 +4725,14 @@ tp-caption.Team-Thumb,
     font-weight: 700;
     font-style: normal;
     font-family: lato;
-    padding: 0 0 0px 0;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center;
     letter-spacing: 2px;
     border-bottom: 1px solid #f87c09 !important
@@ -4753,8 +4744,8 @@ tp-caption.Team-Thumb,
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     cursor: pointer
 }
 .tp-caption.Agency-NavButton,
@@ -4765,14 +4756,14 @@ tp-caption.Team-Thumb,
     font-weight: 500;
     font-style: normal;
     font-family: Roboto;
-    padding: 0px 0px 0px 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: center;
     background-color: rgba(255, 255, 255, 1.00);
     border-color: rgba(0, 0, 0, 1.00);
     border-style: solid;
-    border-width: 0px;
-    border-radius: 0px 0px 0px 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center
 }
 .tp-caption.Agency-NavButton:hover,
@@ -4782,8 +4773,8 @@ tp-caption.Team-Thumb,
     background-color: rgba(51, 51, 51, 1.00);
     border-color: rgba(0, 0, 0, 1.00);
     border-style: solid;
-    border-width: 0px;
-    border-radius: 0px 0px 0px 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     cursor: pointer
 }
 .tp-caption.Agency-SmallLinkGreen,
@@ -4794,14 +4785,14 @@ tp-caption.Team-Thumb,
     font-weight: 700;
     font-style: normal;
     font-family: lato;
-    padding: 0 0 0px 0;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center;
     letter-spacing: 2px;
     border-bottom: 1px solid #6db19b !important
@@ -4813,8 +4804,8 @@ tp-caption.Team-Thumb,
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     cursor: pointer
 }
 .tp-caption.Agency-SmallLinkBlue,
@@ -4825,14 +4816,14 @@ tp-caption.Team-Thumb,
     font-weight: 700;
     font-style: normal;
     font-family: lato;
-    padding: 0 0 0px 0;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center;
     letter-spacing: 2px;
     border-bottom: 1px solid #999 !important
@@ -4844,8 +4835,8 @@ tp-caption.Team-Thumb,
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     cursor: pointer
 }
 .tp-caption.Agency-LogoText,
@@ -4856,14 +4847,14 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Lato;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center;
     letter-spacing: 1px
 }
@@ -4875,14 +4866,14 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Permanent Marker;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: left;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: left
 }
 .tp-caption.Agency-SmallSocial,
@@ -4893,14 +4884,14 @@ tp-caption.Team-Thumb,
     font-weight: 400;
     font-style: normal;
     font-family: Arial;
-    padding: 0 0 0 0px;
+    padding: 0 0 0 0;
     text-decoration: none;
     text-align: center;
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0 0 0 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     text-align: center
 }
 .tp-caption.Agency-SmallSocial:hover,
@@ -4910,7 +4901,7 @@ tp-caption.Team-Thumb,
     background-color: transparent;
     border-color: transparent;
     border-style: none;
-    border-width: 0px;
-    border-radius: 0px 0px 0px 0px;
+    border-width: 0;
+    border-radius: 0 0 0 0;
     cursor: pointer
 }

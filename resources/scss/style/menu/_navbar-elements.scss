@@ -36,50 +36,61 @@ a.brand:focus{
   margin-top: -0.3rem;
 }
 
-.navbar-toggle{
+.navbar {
+  padding-top: $navbar-padding-top;
+}
+
+.navbar-toggle {
   display: block;
   margin:0;
   padding: 0;
   border-radius: 0;
+  .icon-bar {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 7px;
+  }
+  &.light .icon-bar {
+    background-color: $navbar-toggle-light-bg-color;
+  }
+  &.dark .icon-bar {
+    background-color: $navbar-toggle-dark-bg-color;
+  }
+  &:hover .icon-bar{
+    background-color:  $default-theme-color;
+  }
 }
 
-.navbar-toggle .icon-bar{
-  background-color: $navbar-toggle-bg-color;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  width: 30px;
-  height: 3px;
-}
-
-.navbar-toggle:hover .icon-bar{
-  background-color:  $default-theme-color;
-}
-
-.navbar .social-list{
-  float: right;
-  //margin-right: 10%;
+.navbar {
+  .social-list{
+    float: right;
+    //margin-right: 10%;
+    a {
+      color: $navbar-social-link-color;
+      font-size: (1.1 * strip-unit($sidebar-social-font-size)) + rem;
+    }
+  }
 }
 
 .social-list{
   overflow:hidden;
-}
-
-.social-list a{
-  float: left;
-  font-size: 1.428rem;
-  line-height: 1;
-  color: darken($navbar-link-color, 30%);
-  margin-left: 2rem;
-}
-
-.social-list a:first-child{
-  margin-left: 0;
-}
-
-.social-list a:hover{
-  color: $navbar-link-hover;
-  text-decoration: none;
+  a {
+    float: left;
+    font-size: $sidebar-social-font-size;
+    line-height: 1;
+    color: darken($navbar-link-color, 30%);
+    margin-left: (1.2 * strip-unit($sidebar-social-font-size)) + rem;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:hover{
+      color: $navbar-link-hover;
+      text-decoration: none;
+    }
+  }
 }
 
 .navbar-spacer{
@@ -99,14 +110,12 @@ a.brand:focus{
 
 
 /* 2.2 Navbar affix */
-
-
 .navbar.affix{
   position: fixed;
-  background-color: $default-bg-color;
+  background-color: $navbar-bg-color !important;
   width: 100%;
   @include box-shadow(0,0,65px,rgba(0,0,0,0.50));
-  @include gradient-horizontal($default-bg-color, lighten($default-bg-color, 10%));
+  //@include gradient-horizontal($default-bg-color, lighten($default-bg-color, 10%));
   @media screen and (min-width: 768px) {
     .social-list {
       display: block !important;

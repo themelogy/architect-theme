@@ -112,7 +112,7 @@ class HeaderMenuPresenter extends Presenter
     public function getMegaMenuWithDropDownWrapper($item)
     {
         return '<li class="'.$this->getActiveStateOnChild($item, ' active').'">
-		          <a href="#">
+		          <a href="'.$item->getUrl().'">
 					'.$item->getIcon().' '.$item->title.'
 			      </a>
 			      <ul class="dropdown">

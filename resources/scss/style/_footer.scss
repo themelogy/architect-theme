@@ -1,6 +1,7 @@
 .footer{
   position: relative;
   color: $footer-txt-color;
+  background-color: $footer-bg-color;
   line-height: 1.65;
   border-top: 1px solid $footer-top-border-color;
   font-size: 0.95rem;
@@ -45,25 +46,27 @@
   .copyrights {
     font-size: 0.75rem;
   }
+  ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    li a{
+      color: $footer-link-color;
+    }
+    .active a,
+    li a:hover {
+      color: $footer-link-hover;
+      text-decoration: none;
+    }
+  }
+  .lang {
+    a:hover, .active {
+      color: $footer-lang-link-hover;
+    }
+  }
 }
 
-.footer ul{
-  list-style: none;
-  padding:0;
-  margin:0;
-}
-
-.footer ul li a{
-  color: $footer-link-color;
-}
-
-.footer ul .active a,
-.footer ul li a:hover{
-  color: $footer-link-hover;
-  text-decoration: none;
-}
-
-.footer-flex{
+.footer-flex {
   margin-top: -4rem;
   display: -webkit-box;
   display: -webkit-flex;

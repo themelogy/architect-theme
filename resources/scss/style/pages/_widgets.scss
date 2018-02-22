@@ -1,0 +1,177 @@
+/* 6.7 Widgets */
+.widget{
+  margin-bottom: 4.5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.widget:last-child{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.widget-title{
+  font-size: 1.2758rem;
+  letter-spacing: 0;
+  margin:0 0 3rem;
+}
+
+.widget_archive li,
+.widget_categories li,
+.widget_pages li,
+.widget_meta li,
+.widget_recent_entries li,
+.widget_nav_menu li{
+  margin-top:0.5em;
+}
+
+.widget_archive li a,
+.widget_categories li a,
+.widget_pages li a,
+.widget_meta li a,
+.widget_recent_entries li a,
+.widget_nav_menu li a{
+  color:#666666;
+}
+
+.widget_archive li a:hover,
+.widget_categories li a:hover,
+.widget_pages li a:hover,
+.widget_meta li a:hover,
+.widget_recent_entries li a:hover,
+.widget_nav_menu li a:hover{
+  color:$default-theme-color;
+  text-decoration:none;
+}
+
+.widget_categories li{
+  text-align: right;
+}
+
+.widget_categories li a{
+  float: left;
+}
+
+
+
+/* 6.7.1 Widget Search */
+
+
+
+.search-form{
+  position: relative;
+}
+
+.search-form .search-field{
+  background: #f6f6f6;
+  border-color:transparent;
+}
+
+
+.search-form .search-field:focus{
+  background: none;
+}
+
+.search-submit{
+  position: absolute;
+  background: none;
+  border:0;
+  right: 0.8rem;
+  top:1.1rem;
+}
+
+.search-submit:focus{
+  outline:none;
+}
+
+
+
+/* 6.7.2 Widget Twitter */
+
+
+
+.widget ul{
+  list-style: none;
+  padding-left: 0;
+  margin:0;
+}
+
+.widget_twitter li{
+  margin-bottom: 2.2rem;
+}
+
+.widget_twitter li:last-child{
+  margin-bottom: 0;
+}
+
+.widget_twitter li a{
+  color: #0099cc;
+}
+
+.tweet-time{
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.857rem;
+  display: block;
+  color: #999999;
+  text-transform: uppercase;
+}
+
+.widget-all-items{
+  display: inline-block;
+  margin-top: 1.4rem;
+  color: #999999;
+  font-size: 0.928rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.widget-all-items:hover{
+  text-decoration: none;
+}
+
+
+
+
+/* 6.7.3 Widget Recent Posts */
+
+
+
+.widget_recent_posts li{
+  overflow: hidden;
+  margin-bottom: 2.214rem;
+}
+
+.widget_recent_posts li:last-child{
+  margin-bottom: 0;
+}
+
+.recent-post-thumbnail{
+  float: left;
+  margin-right: 1.5rem;
+}
+
+.recent-post-content{
+  overflow-y: hidden;
+  line-height: 1.29;
+}
+
+.post-title{
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: #000;
+}
+
+.post-title:hover{
+  color: $default-theme-color;
+  text-decoration: none;
+}
+
+.post-time{
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.857rem;
+  color: #999999;
+}

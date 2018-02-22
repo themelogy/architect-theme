@@ -17,7 +17,7 @@
   /* Sidebar Menu */
 
   .menu {
-    width: 50%;
+    width: $menu-desktop-size;
   }
 
   /* Homepage */
@@ -104,7 +104,7 @@
   /* Sidebar Menu */
 
   .menu {
-    width: 30rem;
+    width: $menu-desktop-size;
   }
 
   /* Homepage */
@@ -115,7 +115,7 @@
   }
 
   .right-boxed {
-    right: 4.2857rem;
+    right: 2rem;
   }
 
   .left-boxed {
@@ -179,9 +179,9 @@
     padding-right: 0;
   }
 
-  /* About */
+  /* Page */
 
-  .about-info {
+  .section-page {
     padding-top: 1.2rem;
   }
 
@@ -286,7 +286,7 @@
   }
 
   .menu-footer {
-    bottom: 5rem;
+    bottom: $menu-footer-bottom-size;
   }
 
   .menu-footer .copy {
@@ -327,5 +327,8 @@
   }
   .news-description {
     font-size: 0.9rem;
+  }
+  .section-page {
+    padding-top: 1rem;
   }
 }

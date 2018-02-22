@@ -1,29 +1,25 @@
 <footer id="footer" class="footer p-top-bot-50 boxed">
     <div class="footer-flex">
         <div class="flex-item">
-            <a class="footer-brand" href="{{ url(LaravelLocalization::getCurrentLocale()) }}">
-                <img alt="" src="{{ Theme::url("images/logo/logo-light.svg") }}">
-            </a>
-            <div class="social-list m-top-20">
-                @include('partials.components.social')
-            </div>
-            <div class="copyrights p-top-30" style="color: grey;">{!! trans('themes::theme.footer.copyrights', ['company'=>setting('theme::company-name')]) !!}</div>
+            @include('partials.footer.logo')
         </div>
         <div class="flex-item">
-            <address>
-                {!! setting('theme::address') !!}<br/>
-                <abbr title="{{ trans('themes::contact.title.phone') }}">T:</abbr> {!! setting('theme::phone') !!} / {!! setting('theme::phone2') !!}<br/>
-                <abbr title="{{ trans('themes::contact.title.fax') }}">F:</abbr> {!! setting('theme::fax') !!}
-            </address>
+            {!! Menu::render('alt-menu-1', \Themes\Architect\Presenter\FooterMenuLinksPresenter::class) !!}
         </div>
         <div class="flex-item">
-            {!! Menu::render('alt-menu-sol', \Themes\Architect\Presenter\FooterMenuLinksPresenter::class) !!}
+            {!! Menu::render('alt-menu-2', \Themes\Architect\Presenter\FooterMenuLinksPresenter::class) !!}
         </div>
         <div class="flex-item">
-            {!! Menu::render('alt-menu-sag', \Themes\Architect\Presenter\FooterMenuLinksPresenter::class) !!}
+            {!! Menu::render('alt-proje-1', \Themes\Architect\Presenter\FooterMenuLinksPresenter::class) !!}
         </div>
         <div class="flex-item">
-            <ul>
+            {!! Menu::render('alt-proje-2', \Themes\Architect\Presenter\FooterMenuLinksPresenter::class) !!}
+        </div>
+        <div class="flex-item">
+            {!! Menu::render('alt-proje-3', \Themes\Architect\Presenter\FooterMenuLinksPresenter::class) !!}
+        </div>
+        <div class="flex-item">
+            <ul class="lang">
                 @include('partials.components.language',['list_type'=>'true'])
             </ul>
         </div>

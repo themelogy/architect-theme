@@ -38,7 +38,7 @@
                                  data-splitin="chars"
                                  data-splitout="none"
                                  data-responsive_offset="on"
-                                 data-elementdelay="0.05" style="font-weight:600; letter-spacing:-0.05em;">{{ $slide->sub_title }}
+                                 data-elementdelay="0.05" style="font-weight:500; letter-spacing:-0.1em;">{{ $slide->sub_title }}
                             </div>
                             @endif
 

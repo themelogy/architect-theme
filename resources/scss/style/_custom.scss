@@ -1,0 +1,180 @@
+.visible {
+  visibility: visible !important;
+}
+.bt-top {
+  position: fixed;
+  z-index: 100;
+  bottom: 2.5%;
+  right: 2.85%;
+  visibility: hidden;
+  a {
+    display: block;
+    padding: 20px;
+  }
+  i {
+    font-size: 4.2857rem;
+    color: $bt-top-link-color;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+    &:hover {
+      color: $bt-top-link-hover-color;
+    }
+  }
+}
+
+.h-line {
+  position: relative;
+  &:before {
+    content: " ";
+    width: 6rem;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    background-color: $default-theme-color;
+  }
+}
+.l-cube-20 {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 10px;
+  &:before {
+    content: " ";
+    width: 12.5px;
+    height: 12.5px;
+    position: absolute;
+    left: -10px;
+    top: 7.5%;
+    background-color: $default-theme-color;
+  }
+}
+
+//
+// Pagination (multiple pages)
+// --------------------------------------------------
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  font-size: 1.5rem;
+  > li {
+    display: inline; // Remove list-style and block-level defaults
+    > a,
+    > span {
+      position: relative;
+      float: left; // Collapse white-space
+      text-decoration: none;
+      color: $default-txt-color;
+      background-color: transparent;
+      border: none;
+      margin-left: -1px;
+    }
+    &:first-child {
+      > a,
+      > span {
+        margin-left: 0;
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+      }
+    }
+  }
+
+  > li > a,
+  > li > span {
+    &:hover,
+    &:focus {
+      z-index: 2;
+      color: $default-txt-color;
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      z-index: 3;
+      color: $default-theme-color;
+      background-color: transparent;
+      border:none;
+      cursor: default;
+    }
+  }
+
+  > .disabled {
+    > span,
+    > span:hover,
+    > span:focus,
+    > a,
+    > a:hover,
+    > a:focus {
+      color: $default-txt-color;
+      background-color: transparent;
+      border: none;
+    }
+  }
+}
+.social-share {
+  div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    &:first-child {
+      font-weight: 600;
+    }
+  }
+}
+.jssocials-share {
+  &:first-child .jssocials-share-link  {
+    margin-left: 0;
+  }
+}
+.post-share a {
+  font-size: 12px !important;
+}
+.plain .jssocials-share-logo {
+  font-size: 12px !important;
+}
+.plain .jssocials-share-link {
+  border: 1px solid darken(white, 25%) !important;
+  &:hover {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    i {
+      color: $default-theme-color !important;
+    }
+  }
+}
+
+.contact {
+  .input-field {
+    margin-bottom: 30px;
+  }
+  input[type='text'],
+  input[type='address'],
+  input[type='url'],
+  input[type='password'],
+  input[type='email'],
+  input[type="search"],
+  input[type="tel"],
+  textarea{
+    height: 3.25rem;
+    font-size: .9rem;
+  }
+  textarea {
+    height: 8rem;
+  }
+  .btn {
+    font-weight: 600;
+  }
+}

@@ -1,11 +1,11 @@
 .wrapper{
-  //padding-top:7rem;
+  //padding-top: $navbar-height;
   overflow-x:hidden;
 }
 
 .boxed{
-  padding-left: 1.7rem;
-  padding-right: 1.7rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .boxed .container,
@@ -15,23 +15,37 @@
 }
 
 .left-boxed{
-  left: 1.7rem;
+  left: $left-boxed-size;
 }
 
 .right-boxed{
-  right:1.7rem;
+  right:$right-boxed-size;
 }
 
 .section{
-  padding:5rem 0 0 0;
+  padding:1rem 0 0 0;
 }
 
 .section-title{
   margin:0;
-}
-
-.section-title .link-arrow-2{
-  margin-top:1.05rem;
+  padding: 1rem 0;
+  position: relative;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    top:0;
+    filter: grayscale(100%) contrast(200%) opacity(25%);
+  }
+  .link-arrow-2{
+    margin-top:1.05rem;
+  }
+  .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+  }
 }
 
 .section-subtitle{
@@ -42,6 +56,10 @@
   text-transform: uppercase;
   color: $default-theme-color;
   margin-bottom: 1rem;
+}
+
+.section-page {
+  padding: 1rem 0;
 }
 
 /* 3.1 Jumbotron */

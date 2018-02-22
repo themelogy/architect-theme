@@ -1,0 +1,67 @@
+/* 6.4 News Masonry */
+.section-news {
+
+}
+.card {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  border: 1px solid map_get($theme-colors, grey2);
+  &:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.25);
+    .card-block{
+      background: #fff;
+    }
+  }
+  img{
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.card-block{
+  background: #fff;
+  padding: 1rem 2.5rem 2.5rem;
+  line-height: 1.714;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.card-posted{
+  margin-bottom: 0.8rem;
+  a{
+    color: $default-txt-color;
+    &:hover{
+      color: $default-theme-color;
+
+    }
+  }
+}
+
+.card-title{
+  letter-spacing: 0;
+  margin:0;
+  font-size: 1.2rem;
+}
+
+.card-text{
+  margin-top: 1rem;
+  color: $default-txt-color;
+}
+
+.card-read-more{
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: $default-txt-color;
+  &:hover{
+    color: $default-theme-color;
+  }
+}

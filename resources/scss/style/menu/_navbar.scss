@@ -1,24 +1,43 @@
-.navbar{
-  position: absolute;
+.navbar {
+  position: relative;
+  background-color: $navbar-bg-color;
+  //@include gradient-horizontal($default-bg-color, lighten($default-bg-color, 10%));
+  &.home {
+    position: absolute;
+    background-color: transparent;
+  }
   z-index: 10;
   left:0;
-  top:0;
-  width:0;
-  padding-top: 2.7rem;
-  height: 7rem;
-  //background-color: $default-bg-color;
-  //@include gradient-horizontal($default-bg-color, lighten($default-bg-color, 10%));
+  top:-1px;
+  width:100%;
+  padding-top: $navbar-padding-top;
+  height: $navbar-height;
   color: $navbar-txt-color;
   margin:0;
   border-radius: 0;
-  transition: all 0.2s;
-}
-
-.navbar .brand{
-  float: left;
-  margin-top: -0.5rem;
-  margin-left: 3rem;
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
+  //transition: all 0.5s;
+  &.border {
+    border-bottom: 1px solid #fff;
+    &:after {
+      content:" ";
+      width: 100%;
+      position: absolute;
+      height: 1px;
+      bottom: -1px;
+      left: 0;
+      z-index: 0;
+      background-color: $navbar-bottom-border-color;
+    }
+  }
+  .brand{
+    float: left;
+    margin-top: -0.5rem;
+    margin-left: 3rem;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+  .social-list {
+    padding-top: $navbar-social-padding-top;
+  }
 }

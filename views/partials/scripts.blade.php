@@ -13,6 +13,7 @@
 {!! Theme::script('js/imagesloaded.pkgd.min.js') !!}
 {!! Theme::script('js/plugins.js') !!}
 {!! Theme::script('js/sly.min.js') !!}
+{!! Asset::add(Theme::url('vendor/skrollr/dist/skrollr.min.js')) !!}
 
 {!! Theme::script('vendor/jquery.nicescroll/jquery.nicescroll.min.js') !!}
 
@@ -29,7 +30,7 @@
 <script type="text/javascript"> WebFontConfig = {
         google: {
             families: [
-                'Playfair+Display:400,400i,700,700:latin-ext',
+                'Playfair Display:400,400i,500,600,700:latin-ext',
                 'Poppins:300,400,500,600,700:latin-ext'
             ]
         }

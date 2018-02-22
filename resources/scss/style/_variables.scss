@@ -2,44 +2,129 @@
 $theme-colors: (
         red1: #BF263A,
         red2: #D8877B,
-        black1: #221E20
+        black1: #221E20,
+        grey1: darken(white, 2.5%),
+        grey2: darken(white, 5%),
+        grey3: darken(white, 75%),
+        grey4: darken(white, 100%)
 );
 
-$default-theme-color: map_get($theme-colors, red1);
-$default-reverse-color: map_get($theme-colors, black1);
-$default-second-color: map_get($theme-colors, red2);
+// General //
+$default-theme-color          : map_get($theme-colors, red1);
+$default-reverse-color        : map_get($theme-colors, black1);
+$default-second-color         : map_get($theme-colors, red2);
+$default-social-link-color    : darken(white, 60%);
+$default-bg-color             : map_get($theme-colors, grey1);
+$default-txt-color            : map_get($theme-colors, grey3);
+$default-font-size            : 1rem;
+$default-font-weight          : 400;
+$default-line-height          : 1.5rem;
+$default-p-margin-bottom      : 1rem;
+$default-letter-spacing       : 0.015em;
+$default-link-color           : $default-txt-color;
+$default-link-hover-color     : $default-theme-color;
 
-//General
-$default-bg-color: #2a2a2a;
-$default-txt-color: darken(white, 25%);
-$heading-color: #ebebeb;
+$left-boxed-size              : 3rem;
+$right-boxed-size             : 3rem;
+
+// General -> Headings
+$heading-color                : lighten($default-txt-color, 7.5%);
+$default-h1-font-weight       : 500;
+$default-h1-font-size         : 3rem;
+$default-h2-font-weight       : 500;
+$default-h2-font-size         : 2.2rem;
+$default-h3-font-weight       : 500;
+$default-h3-font-size         : 2rem;
+$default-h4-font-weight       : 500;
+$default-h4-font-size         : 1.5rem;
+$default-h5-font-weight       : 500;
+$default-h5-font-size         : 1.25rem;
+$default-h6-font-weight       : 500;
+$default-h6-font-size         : 1.15rem;
+
+// General -> Buttons
+$btn-font-size                : .85rem;
+$btn-bg-color                 : $default-txt-color;
+$btn-txt-color                : #fff;
+$btn-bg-hover-color           : $default-theme-color;
+$btn-bg-hover-txt-color       : #fff;
 
 //Slider Arrow Bullet Link
-$slider-link-color: #fff;
-$slider-hover-color: $default-theme-color;
+$slider-link-color            : map_get($theme-colors, grey1);
+$slider-hover-color           : map_get($theme-colors, grey4);
 
-//Header
-$navbar-bg-color: $default-bg-color;
-$navbar-txt-color: #fff;
-$navbar-toggle-bg-color: #ccc;
-$navbar-link-color: #fff;
-$navbar-link-hover: $default-theme-color;
-$menu-bg-color: lighten($default-bg-color, 5%);
-$menu-link-color: #ebebeb;
-$menu-link-hover: $default-theme-color;
+// Header //
+//Header Navbar
+$navbar-bg-color              : lighten(map_get($theme-colors, grey2), 2%);
+$navbar-bottom-border-color   : darken($default-bg-color, 5%);
+$navbar-txt-color             : #fff;
+$navbar-toggle-light-bg-color : #fff;
+$navbar-toggle-dark-bg-color  : map_get($theme-colors, grey3);
+$navbar-link-color            : #fff;
+$navbar-link-hover            : $default-theme-color;
+$navbar-social-link-color     : $default-social-link-color;
+$navbar-padding-top           : 2.25rem;
+$navbar-height                : 7rem;
+
+//Header Sidebar
+$menu-desktop-size            : 20rem;
+$menu-footer-bottom-size      : 3rem;
+
+$menu-bg-color                : rgba(map_get($theme-colors, grey2),0.97);
+$menu-link-color              : map_get($theme-colors, grey3);
+$menu-link-hover              : $default-theme-color;
+$menu-font-size               : 1rem;
+$menu-copy-font-size          : .6rem;
+$menu-copy-txt-color          : lighten($default-txt-color, 10%);
+$menu-close-font-size         : 1.2rem;
+$menu-copy-top-size           : 1.6rem;
+$menu-dropdown-margin-top-size: 1.75rem;
+$sidebar-left-padding-size    : 3rem;
+$sidebar-lang-font-size       : 0.85rem;
+@mixin menu_shadow() {
+  @include box-shadow(0,5px,30px,rgba(0,0,0,0.20));
+}
+//Sidebar Social
+$navbar-social-padding-top    : 0.5rem;
+$sidebar-social-font-size     : 1rem;
+$navbar-social-font-size      : 1.25rem;
 
 //Home
-$home-news-bg-hover: rgba($default-bg-color, 0.55);
-$filter-link-color: #fff;
-$home-news-txt-color: #fff;
-$project-bg-hover-color: rgba(0,0,0,0.50);
-$project-link-hover: #fff;
-$project-hover-title-color: #fff;
+
+//Home -> News
+$home-news-bg-hover           : rgba(50,50,50,0.50);
+$home-news-link-color         : map_get($theme-colors, grey1);
+$home-news-link-hover-color   : map_get($theme-colors, grey2);
+$home-news-title-font-size    : 1.65rem;
+$home-news-font-size          : .95rem;
+$home-news-line-height        : (1.4 * strip-unit($home-news-font-size)) + rem;
+$home-news-txt-color          : #fff;
+$filter-link-color            : #fff;
+
+//Home -> Project
+$project-bg-hover-color       : rgba(0,0,0,0.50);
+$project-link-hover           : #fff;
+$project-hover-title-color    : #fff;
+$project-font-size            : .95rem;
+$project-font-line-height     : (1.4 * strip-unit($home-news-font-size)) + rem;
+
+//Pages
+//Pages -> News
+$news-post-title-font-size    : 2.25rem;
+$news-post-detail-font-size   : 1.1rem;
 
 //Footer
-$footer-bg-color: $default-bg-color;
-$footer-txt-color: #ccc;
-$footer-link-color: #ccc;
-$footer-link-hover: $default-theme-color;
-$footer-top-border-color: darken($default-bg-color, 10%);
-$footer-social-list-color: #ccc;
+$footer-bg-color              : lighten(map_get($theme-colors, grey2), 2%);
+$footer-txt-color             : $default-txt-color;
+$footer-link-color            : $default-txt-color;
+$footer-link-hover            : $default-theme-color;
+$footer-top-border-color      : darken($default-bg-color, 6%);
+$footer-social-list-color     : lighten($default-txt-color, 25%);
+
+//Footer -> Lang
+$footer-lang-link-color       : $footer-link-color;
+$footer-lang-link-hover       : $default-theme-color;
+
+//Footer -> Go to Top
+$bt-top-link-color            : rgba(darken(white, 30%), 50%);
+$bt-top-link-hover-color      : rgba($default-theme-color, 50%);

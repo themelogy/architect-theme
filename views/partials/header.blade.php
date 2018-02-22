@@ -3,9 +3,9 @@
 <div class="menu">
     <div class="menu-header">
         <a class="brand" href="{{ url(LaravelLocalization::getCurrentLocale()) }}">
-            <img alt="{{ setting('theme::company-name') }}" src="{{ Theme::url("images/logo/logo-light.svg") }}">
+            <img alt="{{ setting('theme::company-name') }}" src="{{ Theme::url("images/logo/logo-dark.svg") }}">
         </a>
-        <span class="close-menu icon-cross2 right-boxed"></span>
+        <span class="close-menu icon-cross2"></span>
     </div>
 
     {!! Menu::render('ust-menu', \Themes\Architect\Presenter\HeaderMenuPresenter::class) !!}
@@ -21,20 +21,10 @@
     </div>
 </div>
 
-<header class="navbar boxed js-navbar">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </button>
 
-    <a class="brand" href="{{ url(LaravelLocalization::getCurrentLocale()) }}">
-        <img alt="{{ setting('theme::company-name') }}" src="{{ Theme::url("images/logo/logo-light.svg") }}">
-    </a>
 
-    <div class="social-list hidden">
-        @include('partials.components.social')
-    </div>
-
-    <div class="navbar-spacer hidden-sm hidden"></div>
-</header>
+@if ($__env->yieldContent('navbar'))
+    @yield('navbar')
+@else
+    @include('partials.header.navbar', ['type'=>'dark', 'border'=>'border', 'social'=>true])
+@endif

@@ -1,0 +1,46 @@
+
+
+
+/* 6.5 News Listing */
+
+
+
+.card-row{
+  position: relative;
+  background: #f2f2f2;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  margin-bottom: 5rem;
+}
+
+.card-row:last-child{
+  margin-bottom: 0;
+}
+
+.card-row-img{
+  position: absolute;
+  left: 0;
+  top:0;
+  padding:0;
+  height: 100%;
+  background-size:cover;
+  background-position: center 0;
+}
+
+.card-row-img img{
+  width: 100%;
+}
+
+.card-row:hover{
+  background: $default-theme-color;
+}
+
+.card-row .card-block{
+  padding:3.6rem;
+  background: transparent;
+}
+
+.card-row .card-read-more{
+  margin-top: 7vw;
+}
