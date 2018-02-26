@@ -33,5 +33,5 @@
         </div>
     </div>
 
-    @include('partials.sections.clients')
+    {!! Widget::get('portfolio_brands', [20]) !!}
 @stop

@@ -1,19 +1,11 @@
-@stack('css-stack')
-{!! Asset::css() !!}
-
 <!-- jQuery -->
 {!! Theme::script('js/jquery.min.js') !!}
 {!! Theme::script('js/bootstrap.min.js') !!}
 
-{!! Theme::script('js/jquery.validate.min.js') !!}
-{!! Theme::script('js/wow.min.js') !!}
-{!! Theme::script('js/jquery.stellar.min.js') !!}
-{!! Theme::script('js/jquery.magnific-popup.min.js') !!}
-{!! Theme::script('js/isotope.pkgd.min.js') !!}
+{{--{!! Theme::script('js/wow.min.js') !!}--}}
+{{--{!! Theme::script('js/jquery.stellar.min.js') !!}--}}
 {!! Theme::script('js/imagesloaded.pkgd.min.js') !!}
-{!! Theme::script('js/plugins.js') !!}
-{!! Theme::script('js/sly.min.js') !!}
-{!! Asset::add(Theme::url('vendor/skrollr/dist/skrollr.min.js')) !!}
+{{--{!! Theme::script('js/plugins.js') !!}--}}
 
 {!! Theme::script('vendor/jquery.nicescroll/jquery.nicescroll.min.js') !!}
 

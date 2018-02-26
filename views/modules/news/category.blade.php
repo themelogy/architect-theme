@@ -21,3 +21,7 @@
         {!! $posts->render('partials.components.pagination') !!}
     </div>
 @endsection
+
+@push('js-stack')
+{!! Asset::add(Theme::url('js/isotope.pkgd.min.js')) !!}
+@endpush

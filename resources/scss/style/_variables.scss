@@ -50,8 +50,8 @@ $btn-bg-hover-color           : $default-theme-color;
 $btn-bg-hover-txt-color       : #fff;
 
 //Slider Arrow Bullet Link
-$slider-link-color            : map_get($theme-colors, grey1);
-$slider-hover-color           : map_get($theme-colors, grey4);
+$slider-link-color            : #fff;
+$slider-hover-color           : map_get($theme-colors, red1);
 
 // Header //
 //Header Navbar
@@ -65,6 +65,8 @@ $navbar-link-hover            : $default-theme-color;
 $navbar-social-link-color     : $default-social-link-color;
 $navbar-padding-top           : 2.25rem;
 $navbar-height                : 7rem;
+$navbar-affix-padding-top     : 1.65rem;
+$navbar-affix-height          : 5.25rem;
 
 //Header Sidebar
 $menu-desktop-size            : 20rem;
@@ -107,6 +109,7 @@ $project-link-hover           : #fff;
 $project-hover-title-color    : #fff;
 $project-font-size            : .95rem;
 $project-font-line-height     : (1.4 * strip-unit($home-news-font-size)) + rem;
+$project-link-hover-arrow     : #fff;
 
 //Pages
 //Pages -> News

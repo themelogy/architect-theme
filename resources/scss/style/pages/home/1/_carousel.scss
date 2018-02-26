@@ -158,7 +158,7 @@
     -o-transition: none;
     transition: none;
     &:hover {
-      color: $default-theme-color !important;
+      color: $project-link-hover-arrow !important;
     }
   }
 }
@@ -176,7 +176,7 @@
   transition: 0.5s ease;
   .project-title{
     position: absolute;
-    bottom: 5.5rem;
+    bottom: 3rem;
     font-weight: 500;
   }
 }

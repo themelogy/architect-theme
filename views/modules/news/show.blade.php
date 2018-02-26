@@ -18,18 +18,18 @@
                             {!! $post->content !!}
                         </div>
                         <div class="entry-footer">
-                            @if(count($post->tags)>0)
-                            <div class="tags-links">
-                                <span>Tags:</span>
-                                @foreach($post->tags as $tag)
-                                <a href="">{{ $tag->name }}</a>,
-                                @endforeach
-                            </div>
-                            @endif
                             <div class="post-share social-share">
                                 <div>{{ trans('themes::news.share') }}</div>
                                 @include('partials.components.share', ['theme'=>'plain'])
                             </div>
+                            @if(count($post->tags)>0)
+                                <div class="tags-links m-top-20">
+                                    <span>{{ trans('tag::tags.tag') }}</span>
+                                    @foreach($post->tags as $tag)
+                                        <a href="">{{ $tag->name }}</a>@if(!$loop->first && $loop->last), @endif
+                                    @endforeach
+                                </div>
+                            @endif
                         </div>
                     </article>
                 </div>

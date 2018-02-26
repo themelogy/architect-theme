@@ -14,18 +14,18 @@
                             data-delay="{{ $slide->settings->delay*1000 ?? '4000' }}">
 
                             <!-- Main image-->
-
-                            <img data-lazyload="{{ $slide->present()->firstImage(1920,1080,'fit',70) }}" data-bgparallax="5"
+                            <img data-lazyload="{{ $slide->present()->firstImage(1920,1080,'fit',70) }}"
+                                 data-bgparallax="5"
                                  alt="{{ $slide->sub_title }}"
                                  data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat"
                                  class="rev-slidebg">
 
                             @if(!empty($slide->sub_title))
-                            <div class="slider-title tp-caption tp-resizeme z-depth-text-5"
+                            <div class="slider-title tp-caption tp-resizeme"
                                  data-color="{{ $slide->settings->title_color ?? '#ffffff' }}"
                                  data-textalign="{{ $slide->settings->title_align ?? 'left' }}"
-                                 data-x="{{ $slide->settings->title_position_h ?? 'left' }}" data-hoffset="{!! $slide->present()->settings('range', 'title_position_x', '', json_encode([0,0,0,0]), true) !!}"
-                                 data-y="{{ $slide->settings->title_position_v ?? 'center' }}" data-voffset="{!! $slide->present()->settings('range', 'title_position_y', '', json_encode([0,0,0,0]), true) !!}"
+                                 data-x="{{ $slide->settings->title_position_h ?? 'left' }}" data-hoffset="{!! @$slide->settings->title_position_x !!}"
+                                 data-y="{{ $slide->settings->title_position_v ?? 'center' }}" data-voffset="{!! @$slide->settings->title_position_y !!}"
                                  data-fontsize="{!! $slide->present()->settings('range', 'title_font_size', 'title_font_responsive', json_encode([74,66,46,36]), true) !!}"
                                  data-lineheight="{!! $slide->present()->settings('range', 'title_line_height', 'title_font_responsive', json_encode([74,66,46,36]), true) !!}"
                                  data-width="{!! $slide->present()->settings('range', 'title_width', 'title_height', json_encode([0,0,0,0]), true) !!}"
@@ -38,7 +38,8 @@
                                  data-splitin="chars"
                                  data-splitout="none"
                                  data-responsive_offset="on"
-                                 data-elementdelay="0.05" style="font-weight:500; letter-spacing:-0.1em;">{{ $slide->sub_title }}
+                                 data-elementdelay="0.05" style="font-weight:500; letter-spacing:-0.1em;">
+                                <a class="slider-link link-arrow" href="{{ $slide->link->url }}" target="{{ $slide->link->target }}">{{ $slide->sub_title }}</a>
                             </div>
                             @endif
 
@@ -46,8 +47,8 @@
                                 <div class="tp-caption tp-resizeme"
                                      data-color="{{ $slide->settings->content_color ?? '#ffffff' }}"
                                      data-textalign="{{ $slide->settings->content_align ?? 'left' }}"
-                                     data-x="{{ $slide->settings->content_position_h ?? 'left' }}" data-hoffset="{!! $slide->present()->settings('range', 'content_position_x', '', json_encode([0,0,0,0]), true) !!}"
-                                     data-y="{{ $slide->settings->content_position_v ?? 'center' }}" data-voffset="{!! $slide->present()->settings('range', 'content_position_y', '', json_encode([0,0,0,0]), true, 30) !!}"
+                                     data-x="{{ $slide->settings->content_position_h ?? 'left' }}" data-hoffset="{!! $slide->settings->content_position_x !!}"
+                                     data-y="{{ $slide->settings->content_position_v ?? 'center' }}" data-voffset="{!! $slide->settings->content_position_y !!}"
                                      data-fontsize="{!! $slide->present()->settings('range', 'content_font_size', 'content_font_responsive', json_encode([74,66,46,36]), true) !!}"
                                      data-lineheight="{!! $slide->present()->settings('range', 'content_line_height', 'content_font_responsive', json_encode([74,66,46,36]), true) !!}"
                                      data-width="{!! $slide->present()->settings('range', 'content_width', 'content_height', json_encode([0,0,0,0]), true) !!}"
@@ -61,11 +62,11 @@
                                 </div>
                             @endif
 
-                            @if($slide->link_type != 'none')
+                            @if($slide->link_type != 'none' && isset($button))
                             <!-- Layer 7 -->
                             <div class="slider-title tp-caption"
-                                 data-x="{{ $slide->settings->link_position_h ?? 'left' }}" data-hoffset="{!! $slide->present()->settings('range', 'link_position_x', '', json_encode([50,40,30,20]), true) !!}"
-                                 data-y="{{ $slide->settings->link_position_v ?? 'center' }}" data-voffset="{!! $slide->present()->settings('range', 'link_position_y', '', json_encode([200,140,110,90]), true, 5) !!}"
+                                 data-x="{{ $slide->settings->link_position_h ?? 'left' }}" data-hoffset="{!! $slide->settings->link_position_x !!}"
+                                 data-y="{{ $slide->settings->link_position_v ?? 'center' }}" data-voffset="{!! $slide->settings->link_position_y !!}"
                                  data-textAlign="['left']"
                                  data-fontsize="['18']"
                                  data-lineheight="['20']"

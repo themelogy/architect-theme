@@ -47,6 +47,6 @@
 </div>
 {!! Form::close() !!}
 
-@push('js_inline')
+@push('js-inline')
 {!! Captcha::script() !!}
 @endpush

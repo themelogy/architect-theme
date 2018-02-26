@@ -113,12 +113,19 @@ a.brand:focus{
 .navbar.affix{
   position: fixed;
   background-color: $navbar-bg-color !important;
+  padding-top: $navbar-affix-padding-top;
+  height: $navbar-affix-height;
   width: 100%;
   @include box-shadow(0,0,65px,rgba(0,0,0,0.50));
   //@include gradient-horizontal($default-bg-color, lighten($default-bg-color, 10%));
   @media screen and (min-width: 768px) {
     .social-list {
       display: block !important;
+    }
+  }
+  .brand {
+    img {
+      height: 3rem;
     }
   }
 }

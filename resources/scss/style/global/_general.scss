@@ -336,6 +336,9 @@ label.error{
   text-decoration: none;
   -webkit-transition: all .3s ease-out!important;
   transition: all .3s ease-out!important;
+  .btn-block {
+    display:block;
+  }
 }
 
 .btn:hover,

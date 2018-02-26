@@ -69,7 +69,7 @@ gulp.task('sass-public', function () {
         }));
 });
 
-gulp.task('combine', function() {
+gulp.task('revolution.combine', function() {
     return gulp.src([
         assetsVendorDir + "/revolution/js/jquery.themepunch.tools.min.js",
         assetsVendorDir + "/revolution/js/jquery.themepunch.revolution.min.js",
@@ -83,6 +83,7 @@ gulp.task('combine', function() {
         assetsVendorDir + "/revolution/js/extensions/revolution.extension.slideanims.min.js",
         assetsVendorDir + "/revolution/js/extensions/revolution.extension.video.min.js"
     ])
+        .pipe(minify())
         .pipe(concat('jquery.revolution.min.js'))
         .pipe(gulp.dest(jsDir));
 });
@@ -97,7 +98,7 @@ gulp.task('js-public', function(){
         .pipe(gulp.dest(themePath+'/js'));
 });
 
-gulp.task('production', ['clear-public', 'sass-source', 'combine', 'copy'], function () {
+gulp.task('production', ['clear-public', 'sass-source', 'revolution.combine', 'copy'], function () {
     return gulp.src("").pipe(shell("php ../../artisan stylist:publish " + theme.name));
 });
 

@@ -11,4 +11,6 @@
 <!-- Styles -->
 {!! Theme::style('vendor/revolution/css/settings.css') !!}
 {!! Theme::style('vendor/revolution/css/navigation.css') !!}
+@stack('css-stack')
+{!! Asset::css() !!}
 {!! Theme::style('css/style.css') !!}
