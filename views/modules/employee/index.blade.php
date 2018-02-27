@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="title h-line">Ekibimiz</h1>
+                    <h1 class="title h-line">{{ trans('themes::employee.title') }}</h1>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
                                         <ul class="team-social">
                                             <li><a href="#">{!! $employee->description !!}</a></li>
                                         </ul>
-                                        <img src="{{ $employee->present()->firstImage(370,450,'fit',80) }}" alt="{{ $employee->fullname }}" class="respimg">
+                                        <img src="{{ $employee->present()->firstImage(370,450,'fit',80) }}" alt="{{ $employee->fullname }}" class="img-responsive">
                                     </div>
                                     <div class="team-info">
                                         <h3><a href="{{ $employee->url }}" class="ajax">{{ $employee->fullname }}</a></h3>

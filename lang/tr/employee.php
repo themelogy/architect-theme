@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title'     => 'Akıl Takımı',
+    'title'     => 'Takım',
     'biography' => 'Biyografi',
     'skills'    => 'Beceriler',
     'articles'  => 'Yazılarım',

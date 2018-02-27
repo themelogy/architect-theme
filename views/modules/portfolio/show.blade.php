@@ -74,6 +74,15 @@
                                     @include('partials.components.share', ['theme'=>'plain'])
                                 </div>
                             </div>
+                            <div class="detail-tags">
+                                @if(count($portfolio->tags)>0)
+                                    <ul class="list-inline">
+                                        @foreach($portfolio->tags as $tag)
+                                        <li><a class="text-white" href="{{ route('news.tag', [$tag->slug]) }}">{{ $tag->name }}</a></li>
+                                        @endforeach
+                                    </ul>
+                                @endif
+                            </div>
                         </div>
                     </div>
                 </div>

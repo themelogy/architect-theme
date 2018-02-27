@@ -178,6 +178,11 @@
           color: $default-theme-color;
         }
       }
+      &.active {
+        a {
+          color: $default-theme-color;
+        }
+      }
     }
   }
 }

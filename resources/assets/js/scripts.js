@@ -1,21 +1,21 @@
-﻿( function($) {
-  'use strict';
-  	/*-------------------------------------------------------------------------------
-	  Detect mobile device 
-	-------------------------------------------------------------------------------*/
+( function($) {
+	'use strict';
+	/*-------------------------------------------------------------------------------
+	 Detect mobile device
+	 -------------------------------------------------------------------------------*/
 	var mobileDevice = true;
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-	  	$('html').addClass('mobile');
-	  	mobileDevice = true;
+		$('html').addClass('mobile');
+		mobileDevice = true;
 	}
 	else{
 		$('html').addClass('no-mobile');
 		mobileDevice = false;
 	}
 
-    /*-------------------------------------------------------------------------------
-	  Window load
-	-------------------------------------------------------------------------------*/
+	/*-------------------------------------------------------------------------------
+	 Window load
+	 -------------------------------------------------------------------------------*/
 	// $(window).on('load', function(){
 	// 	var wow = new WOW({
 	// 	    offset: 150,
@@ -27,8 +27,8 @@
 	var navbar=$('.js-navbar:not(.navbar-fixed)');
 
 	/*-------------------------------------------------------------------------------
-	  Navbar 
-	-------------------------------------------------------------------------------*/
+	 Navbar
+	 -------------------------------------------------------------------------------*/
 	if(!mobileDevice) {
 		navbar.affix({
 			offset: {
@@ -44,7 +44,7 @@
 	});
 
 	navbar.on('affixed-top.bs.affix', function() {
-	  	navbar.removeClass('animated slideInDown');
+		navbar.removeClass('animated slideInDown');
 
 	});
 
@@ -55,8 +55,8 @@
 	});
 
 	/*-------------------------------------------------------------------------------
-	  Menu
-	-------------------------------------------------------------------------------*/
+	 Menu
+	 -------------------------------------------------------------------------------*/
 	$('.navbar-toggle').on('click',function(){
 		$('body').removeClass('menu-is-closed').addClass('menu-is-opened');
 		$('.navbar').stop().animate({'margin-top':'-7rem'}, 500);
@@ -81,10 +81,10 @@
 		$(this).closest('li').children('ul').slideToggle(200);
 		return false;
 	});
-    
-    /*-------------------------------------------------------------------------------
-	  Parallax
-	-------------------------------------------------------------------------------*/
+
+	/*-------------------------------------------------------------------------------
+	 Parallax
+	 -------------------------------------------------------------------------------*/
 	// $(window).stellar({
 	//   	responsive: true,
 	//   	horizontalScrolling: false,
@@ -94,16 +94,16 @@
 	// });
 
 	/*-------------------------------------------------------------------------------
-	  Projects grid
-	-------------------------------------------------------------------------------*/
+	 Projects grid
+	 -------------------------------------------------------------------------------*/
 	function columnGrid(){
-	  $('.js-grid-items').each(function(){
-		  var colWrap =$(this).width();
-		  var colItem = Math.floor(colWrap / 390);
-		  var colFixedItem = Math.floor(colWrap / colItem);
-		  $(this).find('.js-grid-item').css({ 'width' : colWrap});
-		  $(this).find('.js-grid-item').css({ 'width' : colFixedItem});
-	  });
+		$('.js-grid-items').each(function(){
+			var colWrap =$(this).width();
+			var colItem = Math.floor(colWrap / 390);
+			var colFixedItem = Math.floor(colWrap / colItem);
+			$(this).find('.js-grid-item').css({ 'width' : colWrap});
+			$(this).find('.js-grid-item').css({ 'width' : colFixedItem});
+		});
 	}
 
 	columnGrid();
@@ -113,42 +113,42 @@
 	});
 
 	/*-------------------------------------------------------------------------------
-	  Hide project info
-	-------------------------------------------------------------------------------*/
+	 Hide project info
+	 -------------------------------------------------------------------------------*/
 	$('.project-detail-control').on('click', function(){
 		$(this).toggleClass('active');
 		$('.project-detail-content').slideToggle(200);
 	});
 
 	/*-------------------------------------------------------------------------------
-	  Owl Carousel
-	-------------------------------------------------------------------------------*/
+	 Owl Carousel
+	 -------------------------------------------------------------------------------*/
 	if ($('.owl-carousel').length > 0){
 		/*-------------------------------------------------------------------------------
-		  Project Carousel
-		-------------------------------------------------------------------------------*/
-	   var owl_pc = $('.project-carousel').owlCarousel({
-		    dots:false,
-		    margin:30,
-		    smartSpeed:250,
-		    responsiveRefreshRate:0,
-		    nav: true,
-		    lazyLoad: true,
-		    navText: ['',''],
-		    responsive:{
-		        0:{
-		            items:1
-		        },
-		        768:{
-		            items:2
-		        },
-		        1200:{
-		            items:3
-		        },
-		        1600:{
-		            items:4
-		        }
-		    }
+		 Project Carousel
+		 -------------------------------------------------------------------------------*/
+		var owl_pc = $('.project-carousel').owlCarousel({
+			dots:false,
+			margin:30,
+			smartSpeed:250,
+			responsiveRefreshRate:0,
+			nav: true,
+			lazyLoad: true,
+			navText: ['',''],
+			responsive:{
+				0:{
+					items:1
+				},
+				768:{
+					items:2
+				},
+				1200:{
+					items:3
+				},
+				1600:{
+					items:4
+				}
+			}
 		});
 
 		$('.section-projects .owl-next').click(function () {
@@ -160,102 +160,102 @@
 		});
 
 		/*-------------------------------------------------------------------------------
-		  Partner Carousel
-		-------------------------------------------------------------------------------*/
-	   $('.partner-carousel').owlCarousel({
-		    margin:30,
-		    dots:false,
-		    responsiveRefreshRate:0,
-		    nav: false,
-		    navText: ['',''],
-		    autoplay:true,
-		   	center: false,
-		    autoplayHoverPause:true,
-		    loop: true,
-		    responsive:{
-		        0:{
-		            items:1,
+		 Partner Carousel
+		 -------------------------------------------------------------------------------*/
+		$('.partner-carousel').owlCarousel({
+			margin:30,
+			dots:false,
+			responsiveRefreshRate:0,
+			nav: false,
+			navText: ['',''],
+			autoplay:true,
+			center: false,
+			autoplayHoverPause:true,
+			loop: true,
+			responsive:{
+				0:{
+					items:1,
 					center: true
-		        },
-		        500:{
-		            items:3,
+				},
+				500:{
+					items:3,
 					autoWidth: true
-		        },
+				},
 				750:{
 					items:4,
 					autoWidth: true
 				},
-		        992:{
-		        	items:5,
+				992:{
+					items:5,
 					autoWidth: true,
 					margin:40
-		        },
-		        1200:{
-		        	items:6,
+				},
+				1200:{
+					items:6,
 					autoWidth: true,
 					margin:50,
 					loop: true
-		        },
+				},
 				1600: {
 					items:7,
 					autoWidth: true,
 					loop: true,
 					margin:60
 				}
-		    }
+			}
 		});
-	    /*-------------------------------------------------------------------------------
-		  News Carousel
-		-------------------------------------------------------------------------------*/
-	   $('.news-carousel').owlCarousel({
-		    margin:30,
-		    smartSpeed:250,
-		    dots:false,
-		    responsiveRefreshRate:0,
+		/*-------------------------------------------------------------------------------
+		 News Carousel
+		 -------------------------------------------------------------------------------*/
+		$('.news-carousel').owlCarousel({
+			margin:30,
+			smartSpeed:250,
+			dots:false,
+			responsiveRefreshRate:0,
 			nav: true,
 			navText: ['',''],
-		    lazyLoad: true,
-		   responsive:{
-			   0:{
-				   items:1
-			   },
-			   768:{
-				   items:2
-			   },
-			   1200:{
-				   items:3
-			   },
-			   1600:{
-				   items:4
-			   }
-		   }
+			lazyLoad: true,
+			responsive:{
+				0:{
+					items:1
+				},
+				768:{
+					items:2
+				},
+				1200:{
+					items:3
+				},
+				1600:{
+					items:4
+				}
+			}
 		});
 
-	   $(".review-carousel").owlCarousel({
+		$(".review-carousel").owlCarousel({
 			responsive:{
-		       0:{
-		            items:1
-		        },
-		        720:{
-		            items:1,
-		            
-		        },
-		        1280:{
-		            items:1
-		        }
-		    },
-		    responsiveRefreshRate:0,
+				0:{
+					items:1
+				},
+				720:{
+					items:1,
+
+				},
+				1280:{
+					items:1
+				}
+			},
+			responsiveRefreshRate:0,
 			nav:true,
 			navText:[],
 			animateIn: 'fadeIn',
-		 	dots:false
+			dots:false
 		});
 
 	}
 	/*-------------------------------------------------------------------------------
-	  Projects masonry
-	-------------------------------------------------------------------------------*/
-	 var $container=$('.js-isotope').each(function() {		
+	 Projects masonry
+	 -------------------------------------------------------------------------------*/
+	var $container=$('.js-isotope').each(function() {
 		var $container = $(this);
 		$container.imagesLoaded( function(){
 			$container.isotope({
@@ -267,7 +267,7 @@
 				}
 			});
 		});
-    });
+	});
 
 	/*-------------------------------------------------------------------------------
 	 Scroll

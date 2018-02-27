@@ -13,7 +13,8 @@ return [
         'share'            => 'Paylaş',
         'area_size'        => 'Alan',
         'meta_title'       => 'Mimari Projeler',
-        'meta_description' => 'Mimari Projeler'
+        'meta_description' => 'Mimari Projeler',
+        'all'              => 'Tümü'
     ],
     'button' => [
         'view'   => 'Projeyi İncele',

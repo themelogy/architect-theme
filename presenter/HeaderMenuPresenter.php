@@ -57,7 +57,7 @@ class HeaderMenuPresenter extends Presenter
      */
     public function getActiveState($item, $state = ' class="active"')
     {
-        return $item->isActive() ? $state : null;
+        return \Request::is($item->getRequest()) ? $state : null;
     }
 
     /**
@@ -70,7 +70,7 @@ class HeaderMenuPresenter extends Presenter
      */
     public function getActiveStateOnChild($item, $state = ' active')
     {
-        return $item->hasActiveOnChild() || $item->isActive() ? $state : null;
+        return $item->hasActiveOnChild() ? $state : null;
     }
 
     /**

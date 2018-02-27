@@ -3,6 +3,7 @@
 var gulp        = require('gulp'),
     shell       = require('gulp-shell'),
     sass        = require('gulp-sass'),
+    clean       = require('gulp-clean'),
     del         = require('del'),
     concat      = require('gulp-concat'),
     browserSync = require('browser-sync').create(),
@@ -88,9 +89,17 @@ gulp.task('revolution.combine', function() {
         .pipe(gulp.dest(jsDir));
 });
 
+gulp.task('compress', function () {
+   gulp.src(jsDir+"/scripts-min.js")
+       .pipe(clean());
+   return gulp.src(jsDir + "/scripts.js")
+              .pipe(minify())
+              .pipe(gulp.dest(jsDir));
+});
+
 gulp.task('copy', function () {
     return gulp.src(resourceAssetsDir+"/**")
-        .pipe(gulp.dest(assetsDir));
+               .pipe(gulp.dest(assetsDir));
 });
 
 gulp.task('js-public', function(){
@@ -98,7 +107,7 @@ gulp.task('js-public', function(){
         .pipe(gulp.dest(themePath+'/js'));
 });
 
-gulp.task('production', ['clear-public', 'sass-source', 'revolution.combine', 'copy'], function () {
+gulp.task('production', ['clear-public', 'sass-source', 'revolution.combine', 'compress', 'copy'], function () {
     return gulp.src("").pipe(shell("php ../../artisan stylist:publish " + theme.name));
 });
 
