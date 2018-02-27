@@ -6,11 +6,11 @@
                     <div class="partner-carousel-item">
                         @if(!empty($brand->website))
                         <a target="_blank" href="{{ $brand->website }}">
-                            <img src="{{ $brand->present()->firstImage(null, 250, 'resize', 100) }}"
+                            <img src="{{ $brand->present()->firstImage(null, 50, 'resize', 70) }}"
                                  alt="{{ $brand->title }}">
                         </a>
                         @else
-                            <img src="{{ $brand->present()->firstImage(null, 250, 'resize', 100) }}"
+                            <img src="{{ $brand->present()->firstImage(null, 50, 'resize', 70) }}"
                                  alt="{{ $brand->title }}">
                         @endif
                     </div>

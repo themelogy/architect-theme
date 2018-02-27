@@ -115,33 +115,35 @@
   cursor: e-resize;
 }
 
-.owl-nav div {
-  position: absolute;
-  top: 50%;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  background: rgba(0, 0, 0, 0.31);
-  text-align: center;
-  cursor: pointer;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: 600;
-  opacity: 1;
-  -webkit-transition: all 200ms linear;
-  -moz-transition: all 200ms linear;
-  -o-transition: all 200ms linear;
-  -ms-transition: all 200ms linear;
-  transition: all 200ms linear;
-  z-index: 20;
-}
+.owl-carousel.project-details {
+  .owl-nav div {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: rgba(0, 0, 0, 0.31);
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    opacity: 1;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+    z-index: 20;
+  }
 
-.owl-next {
-  right: 5rem;
-  padding-left: 2px;
-}
+  .owl-next {
+    right: 5rem;
+    padding-left: 2px;
+  }
 
-.owl-prev {
-  left: 5rem;
-  padding-right: 2px;
+  .owl-prev {
+    left: 5rem;
+    padding-right: 2px;
+  }
 }

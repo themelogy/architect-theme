@@ -101,7 +101,6 @@
 
     @push('js-stack')
     {!! Theme::script('js/jquery.revolution.min.js') !!}
-    {!! Theme::script('js/rev-slider-init.js') !!}
     @endpush
 
     @push('css-inline')
