@@ -362,49 +362,48 @@
 		}
 
 		gR.addClass('owl-carousel owl-theme');
-		gR.imagesLoaded(function(){
-			gR.owlCarousel({
-				dots: false,
-				margin: 10,
-				items: 3,
-				smartSpeed: 1300,
-				loop: true,
-				autoplay: true,
-				autoplayTimeout: 3000,
-				center: true,
-				nav: true,
-				navText: ["", ""],
-				onInitialized: function () {
-					if (w.width() > 768) {
-						gR.find(".owl-stage").css({
-							height: a - b - (a/3),
-							overflow: "hidden"
-						});
-					}
-				},
-				responsive: {
-					0: {
-						items: 1,
-						autoHeight: true
-					},
-					768: {
-						items: 2,
-						autoHeight: true
-					},
-					1024: {
-						items: 3,
-						autoWidth: true
-					},
-					1200: {
-						items: 3,
-						autoWidth: true
-					},
-					1600: {
-						items: 4,
-						autoWidth: true
-					}
+		gR.owlCarousel({
+			dots: false,
+			margin: 10,
+			items: 3,
+			smartSpeed: 1300,
+			loop: true,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			center: true,
+			nav: true,
+			lazyLoad: true,
+			navText: ["", ""],
+			onInitialized: function () {
+				if (w.width() > 768) {
+					gR.find(".owl-stage").css({
+						height: a - b - (a/3),
+						overflow: "hidden"
+					});
 				}
-			});
+			},
+			responsive: {
+				0: {
+					items: 1,
+					autoHeight: true
+				},
+				768: {
+					items: 2,
+					autoHeight: true
+				},
+				1024: {
+					items: 3,
+					autoWidth: true
+				},
+				1200: {
+					items: 3,
+					autoWidth: true
+				},
+				1600: {
+					items: 4,
+					autoWidth: true
+				}
+			}
 		});
 	}
 
@@ -412,6 +411,11 @@
 		initGalleryhorizontal();
 		w.on("resize.destroyhorizontal", function () {
 			setTimeout(initGalleryhorizontal, 150);
+		});
+		gR.on('loaded.owl.lazy', function(event) {
+			$(this).find('.owl-item.active img').one('load', function () {
+				gR.trigger('refresh.owl.carousel');
+			});
 		});
 	}
 

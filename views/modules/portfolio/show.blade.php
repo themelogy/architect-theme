@@ -7,7 +7,7 @@
                 @foreach($portfolio->present()->images(null,720,'resize',85) as $image)
                     <div class="horizontal_item">
                         <a class="popup-image slider-zoom" data-src="{{ $image }}" data-sub-html="{{ $portfolio->title }}"><i class="fa fa-expand"></i></a>
-                        <img src="{{ $image }}" alt="{{ $portfolio->title }} {{ $loop->iteration }}"/>
+                        <img class="owl-lazy" data-src="{{ $image }}" alt="{{ $portfolio->title }} {{ $loop->iteration }}"/>
                     </div>
                 @endforeach
             </div>

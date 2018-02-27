@@ -8,7 +8,7 @@
         <span class="close-menu icon-cross2"></span>
     </div>
 
-    {!! Menu::render('ust-menu', \Themes\Architect\Presenter\HeaderMenuPresenter::class) !!}
+    {!! Menu::render('header', \Themes\Architect\Presenter\HeaderMenuPresenter::class) !!}
 
     <div class="menu-footer right-boxed">
         <div class="menu-lang m-bot-20">
