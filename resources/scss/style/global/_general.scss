@@ -80,7 +80,7 @@ h2,
   line-height: 1.166;
   color: $heading-color;
   letter-spacing: -0.020em;
-  margin:2.6rem 0;
+  margin:0.4em 0;
 }
 
 h3,
@@ -90,7 +90,7 @@ h3,
   line-height: 1.2;
   letter-spacing: -0.020em;
   color: $heading-color;
-  margin:2.6rem 0;
+  margin:0.3em 0;
 }
 
 h4,
@@ -100,7 +100,7 @@ h4,
   line-height: 1.25;
   letter-spacing: -0.020em;
   color: $heading-color;
-  margin:2.6rem 0;
+  margin:0.2em 0;
 }
 
 h5,
@@ -110,7 +110,7 @@ h5,
   line-height: 1.1;
   letter-spacing: -0.020em;
   color: #000;
-  margin:2.6rem 0;
+  margin:0.1em 0;
 }
 
 h6,
@@ -120,7 +120,6 @@ h6,
   line-height: 1.3333;
   letter-spacing:-0.020rem;
   color: #000;
-  margin:2.6rem 0;
 }
 
 h1 a,
@@ -338,6 +337,16 @@ label.error{
   transition: all .3s ease-out!important;
   .btn-block {
     display:block;
+  }
+  &.btn-bordered {
+    background-color: transparent;
+    color: $default-txt-color;
+    border: 1px solid darken(white, 10%);
+    &:hover {
+      background-color: transparent;
+      color: $default-theme-color;
+      border-color: $default-theme-color;
+    }
   }
 }
 

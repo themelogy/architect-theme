@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="content boxed">
-        <h1 class="title h-line m-bot-30">{{ trans('themes::portfolio.title.portfolios') }}</h1>
+        <h1 class="title h-line m-top-20">{{ trans('themes::portfolio.title.portfolios') }}</h1>
         <div class="project-categories p-top-bot-20">
             @include('portfolio::partials._categories')
         </div>

@@ -68,11 +68,23 @@
                                     </li>
                                 @endif
                             </ul>
-                            <div class="detail-meta">
+                            <div class="detail-meta m-top-20">
                                 <span class="left hidden-xs pull-sm-left">{{ trans('themes::portfolio.title.share') }} :</span>
                                 <div class="pull-sm-right">
                                     @include('partials.components.share', ['theme'=>'plain'])
                                 </div>
+                            </div>
+                            <div class="detail-buttons m-top-30">
+                                @if($previous = $portfolio->present()->previous)
+                                    <div class="previous-post-link pull-left m-rgt-10">
+                                        <a class="btn btn-bordered" href="{{ $previous->url }}"><i class="fa fa-angle-left font-20"></i></a>
+                                    </div>
+                                @endif
+                                @if($next = $portfolio->present()->next)
+                                    <div class="next-post-link pull-left">
+                                        <a class="btn btn-bordered" href="{{ $next->url }}"><i class="fa fa-angle-right font-20"></i></a>
+                                    </div>
+                                @endif
                             </div>
                             <div class="detail-tags">
                                 @if(count($portfolio->tags)>0)

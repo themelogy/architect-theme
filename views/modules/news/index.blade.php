@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="content boxed">
-        <h1 class="title h-line m-bot-30">{{ trans('themes::news.title') }}</h1>
+        <h1 class="title h-line m-top-20">{{ trans('themes::news.title') }}</h1>
         <div class="grid-items js-isotope js-grid-items p-top-bot-50 section-news">
             @foreach($posts as $post)
                 @include('news::partials._post')

@@ -17,7 +17,9 @@ return [
         'all'              => 'Tümü'
     ],
     'button' => [
-        'view'   => 'Projeyi İncele',
-        'detail' => 'Projeyi Detayı'
+        'view'     => 'Projeyi İncele',
+        'detail'   => 'Projeyi Detayı',
+        'previous' => 'Önceki Proje',
+        'next'     => 'Sonraki Proje'
     ]
 ];

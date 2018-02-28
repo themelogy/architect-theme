@@ -197,3 +197,33 @@ a.fill-div {
     font-weight: 600;
   }
 }
+
+.breadcrumbs {
+  &.border-tb {
+    border-top: 1px solid darken(white, 7.5%);
+    border-bottom: 1px solid darken(white, 7.5%);
+  }
+  &.border-b {
+    border-bottom: 1px solid darken(white, 7.5%);
+  }
+  &.border-t {
+    border-top: 1px solid darken(white, 7.5%);
+  }
+  .breadcrumb {
+    background-color: transparent;
+    margin: 0;
+    padding: 8px 15px;
+    > li {
+      + li:before {
+        border-bottom: 1px solid darken(white, 7.5%);
+      }
+    }
+    a {
+      color: $default-txt-color;
+      text-decoration: none;
+      &:hover {
+        color: $default-theme-color;
+      }
+    }
+  }
+}

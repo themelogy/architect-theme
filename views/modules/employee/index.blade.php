@@ -1,22 +1,12 @@
 @extends('layouts.master')
 
 @section('content')
-
-    <main class="section-title">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="title h-line">{{ trans('themes::employee.title') }}</h1>
-                </div>
-            </div>
-        </div>
-    </main>
-
     <div class="content">
         <section>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
+                        <h1 class="title h-line m-top-20">{{ trans('themes::employee.title') }}</h1>
                         <ul class="team-holder">
                             @foreach($employees as $employee)
                             <li>

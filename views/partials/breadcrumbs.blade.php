@@ -11,7 +11,7 @@
                     <a href="{{ $crumb->url }}">{!! $icon !!}{!! Str::words($crumb->title, 6) !!}</a>
                 </li>
             @else
-                <li>{!! $icon !!}{!! Str::words($crumb->title, 6) !!}</li>
+                <li class="active">{!! $icon !!}{!! Str::words($crumb->title, 6) !!}</li>
             @endif
         @endforeach
     </ol>

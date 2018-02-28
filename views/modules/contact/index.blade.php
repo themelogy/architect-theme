@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <main class="md-p-bot-50">
+    <main class="m-top-20 m-bot-10">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-12">
