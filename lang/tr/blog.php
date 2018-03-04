@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'title'         => 'Haberler',
-    'description'   => 'Projeler hakkında son haberler',
+    'title'         => 'Blog',
+    'description'   => 'Projeler hakkında son yazılar',
     'author posts'  => ':author yazıları',
-    'recent posts'  => 'Son Haberler',
-    'other news'    => 'Diğer Haberler',
+    'recent posts'  => 'Son Yazılar',
+    'other news'    => 'Diğer Yazılar',
     'popular posts' => 'Popüler',
     'tags'          => 'Etiketler',
     'share'         => 'Paylaş',

@@ -148,6 +148,7 @@
   li a{
     color: $menu-link-color;
     font-size: $menu-font-size;
+    text-transform: uppercase;
     font-weight: normal;
   }
   .active > a,
