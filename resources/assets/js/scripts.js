@@ -244,15 +244,16 @@
 	 -------------------------------------------------------------------------------*/
 	var $container=$('.js-isotope').each(function() {
 		var $container = $(this);
-		$container.imagesLoaded( function(){
-			$container.isotope({
-				itemSelector: '.js-isotope-item',
-				percentPosition: true,
-				layoutMode: 'masonry',
-				masonry: {
-					columnWidth: '.js-isotope-item'
-				}
-			});
+		$container.isotope({
+			itemSelector: '.js-isotope-item',
+			percentPosition: true,
+			layoutMode: 'masonry',
+			masonry: {
+				columnWidth: '.js-isotope-item'
+			}
+		});
+		$container.imagesLoaded().progress( function(){
+			$container.isotope('layout');
 		});
 	});
 
@@ -268,7 +269,8 @@
 			autohidemode: false,
 			horizrailenabled: true,
 			preservenativescrolling: true,
-			cursordragontouch: false
+			cursordragontouch: false,
+			zindex:5
 		});
 	}
 

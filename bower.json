@@ -26,6 +26,7 @@
     "slick-carousel": "^1.8.1",
     "swiper": "^4.1.6",
     "skrollr": "^0.6.30",
-    "jssocials": "^1.5.0"
+    "jssocials": "^1.5.0",
+    "infinite-scroll": "^3.0.3"
   }
 }

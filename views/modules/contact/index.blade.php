@@ -20,7 +20,8 @@
                             <div class="info m-bot-20">
                                 <h3 class="contact-title contact-top">{{ setting('theme::company-name') }}</h3>
                                 <p class="contact-address m-bot-5 text-muted">{!! setting('theme::address') !!}</p>
-                                <p class="phone-sm m-bot-5 text-muted">{{ setting('theme::phone') }} / {{ setting('theme::phone2') }}</p>
+                                <p class="phone-sm m-bot-5 text-muted">T: {{ setting('theme::phone') }} / {{ setting('theme::phone2') }}</p>
+                                <p class="phone-sm m-bot-5 text-muted">F: {{ setting('theme::fax') }}</p>
                                 <p class="contact-row text-muted email-sm">{!! Html::email(setting('theme::email')) !!}</p>
                                 <div class="text-muted m-top-30"><strong>{{ trans('themes::contact.follow us') }}</strong><br>
                                     <div class="contact-social social-list">
@@ -36,7 +37,7 @@
                                 </div>
                             </div>
                             <div class="directions">
-                                <a target="_blank" href="https://www.google.com/maps/dir/Current+Location/{!! urlencode(strip_tags(setting('theme::address'))) !!}" class="btn btn-block text-uppercase"><i class="fa fa-compass m-rgt-5"></i> {{ trans('themes::contact.directions') }}</a>
+                                <a target="_blank" href="https://www.google.com/maps/dir/Current+Location/{!! urlencode(strip_tags(setting('theme::address'))) !!}" class="btn btn-block text-uppercase btn-bordered"><i class="fa fa-compass m-rgt-5"></i> {{ trans('themes::contact.directions') }}</a>
                             </div>
                         </div>
                     </div>

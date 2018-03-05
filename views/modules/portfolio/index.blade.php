@@ -10,6 +10,8 @@
             <div class="grid-items js-isotope js-grid-items">
                 @foreach($portfolios as $portfolio)
                     @include('portfolio::partials._portfolio')
+                    @include('portfolio::partials._portfolio')
+                    @include('portfolio::partials._portfolio')
                 @endforeach
             </div>
         </div>

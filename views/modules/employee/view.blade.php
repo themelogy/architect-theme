@@ -6,8 +6,8 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="{{ $employee->present()->firstImage(370,450,'fit',80) }}" alt="{{ $employee->fullname }}" class="z-depth-20 effect effect-gray effect-size respimg">
+                    <div class="col-md-4 md-p-rgt-40">
+                        <img src="{{ $employee->present()->firstImage(370,450,'fit',80) }}" alt="{{ $employee->fullname }}" class="z-depth-20 effect effect-gray effect-size img-responsive m-bot-20">
                     </div>
                     <div class="col-md-8">
                         <h1 class="title p-top-bot-0 m-top-0 m-bot-0">{{ $employee->fullname }}</h1>

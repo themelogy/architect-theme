@@ -12,13 +12,15 @@
   padding:40px 40px 40px 0;
   position: relative;
   img {
-    filter: grayscale(100%) contrast(110%) opacity(90%);
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    &:hover {
+    filter: grayscale(100%);
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
+    transition: all 2s;
+  }
+  &:hover {
+    img {
       filter: grayscale(0);
       transform: scale(1.1);
     }

@@ -13,7 +13,7 @@
 {!! Asset::js() !!}
 
 <!-- Scripts -->
-{!! Theme::script('js/scripts-min.js') !!}
+{!! Theme::script('js/scripts-min.js?v=14') !!}
 
 
 @stack('css-inline')

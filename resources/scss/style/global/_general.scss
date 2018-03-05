@@ -36,21 +36,21 @@ body{
 
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
-  background: $default-theme-color;
+  background: darken(white, 25%);
 }
 
 ::selection{
-  background-color:$default-theme-color;
+  background-color:darken(white, 25%);
   color:#fff;
 }
 
 -webkit-::selection{
-  background-color:$default-theme-color;
+  background-color:darken(white, 25%);
   color:#fff;
 }
 
 ::-moz-selection{
-  background-color:$default-theme-color;
+  background-color:darken(white, 25%);
   color:#fff;
 }
 
