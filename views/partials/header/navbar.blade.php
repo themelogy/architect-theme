@@ -1,4 +1,4 @@
-<header id="navbar" class="navbar {{ $template ?? null }} boxed js-navbar {{ $border ?? null }}">
+<header id="navbar" class="navbar {{ $template ?? null }} boxed js-navbar navbar-fixed-top {{ $border ?? null }}">
     <button type="button" class="navbar-toggle {{ $type or null }}" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>

@@ -137,6 +137,7 @@ gulp.task('browser-sync', function() {
 gulp.task('watch', ['browser-sync'], function () {
     gulp.watch([sassDir + '/**/*.scss'], ['sass-public']);
     gulp.watch('views/**/*.php', browserSync.reload);
+    gulp.watch(resourceAssetsDir+'/js/**/*.js', ['compress']);
     gulp.watch(resourceAssetsDir+'/js/**/*.js', ['js-public']);
     gulp.watch(resourceAssetsDir+'/js/**/*.js', browserSync.reload);
 });

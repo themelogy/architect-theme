@@ -1,5 +1,7 @@
+.affix-body {
+  padding-top: $navbar-padding-top + ($navbar-height - $navbar-padding-top);
+}
 .navbar {
-  position: relative;
   background-color: $navbar-bg-color;
   //@include gradient-horizontal($default-bg-color, lighten($default-bg-color, 10%));
   &.home {

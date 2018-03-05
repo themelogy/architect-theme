@@ -26,7 +26,7 @@
                                 <div class="tags-links m-top-20">
                                     <span>{{ trans('tag::tags.tag') }}</span>
                                     @foreach($post->tags as $tag)
-                                        <a class="text-white" href="">{{ $tag->name }}</a>@if(!$loop->first && $loop->last), @endif
+                                        <a class="text-white" href="{{ route('news.tag', [$tag->slug]) }}">{{ $tag->name }}</a>@if(!$loop->first && $loop->last), @endif
                                     @endforeach
                                 </div>
                             @endif
