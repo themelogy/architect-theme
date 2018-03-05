@@ -32,7 +32,7 @@
                         <div class="col-md-6">
                             <div class="google-map" style="height: 300px;">
                                 <div style="height:150px; width: 100%;" class="m-bot-50 border light-gray">
-                                    @gmap('150px', '15', 'images/favicon.png', true)
+                                    @gmap('150px', '15', 'images/favicon.png', ['draggable'=>true, 'streetview'=>true, 'fullscreen'=>true, 'scrollzoom'=>true, 'zoomcontrol'=>true])
                                 </div>
                             </div>
                             <div class="directions">
