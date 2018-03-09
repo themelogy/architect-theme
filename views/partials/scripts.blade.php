@@ -1,20 +1,17 @@
 <!-- jQuery -->
 {!! Theme::script('js/jquery.min.js') !!}
 {!! Theme::script('js/bootstrap.min.js') !!}
-
 {{--{!! Theme::script('js/wow.min.js') !!}--}}
 {{--{!! Theme::script('js/jquery.stellar.min.js') !!}--}}
 {!! Theme::script('js/imagesloaded.pkgd.min.js') !!}
 {{--{!! Theme::script('js/plugins.js') !!}--}}
-
-{!! Theme::script('vendor/jquery.nicescroll/jquery.nicescroll.min.js') !!}
+{{--{!! Theme::script('vendor/jquery.nicescroll/jquery.nicescroll.min.js') !!}--}}
 
 @stack('js-stack')
 {!! Asset::js() !!}
 
 <!-- Scripts -->
-{!! Theme::script('js/scripts-min.js?v=14') !!}
-
+{!! Theme::script('js/scripts-min.js?v=20') !!}
 
 @stack('css-inline')
 @stack('js-inline')

@@ -24,6 +24,11 @@
         {!! Form::input('text', 'settings[image_height]', !isset($portfolio->settings->image_height) ? '' : $portfolio->settings->image_height, ['class'=>'form-control']) !!}
         {!! $errors->first("settings.image_height", '<span class="help-block">:message</span>') !!}
     </div>
+    <div class="form-group{{ $errors->has("settings.video") ? ' has-error' : '' }}">
+        {!! Form::label("settings.video", "Video".':') !!}
+        {!! Form::input('text', 'settings[video]', !isset($portfolio->settings->video) ? '' : $portfolio->settings->video, ['class'=>'form-control']) !!}
+        {!! $errors->first("settings.video", '<span class="help-block">:message</span>') !!}
+    </div>
 </div>
 
 @push('js-stack')

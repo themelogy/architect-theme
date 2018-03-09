@@ -4,19 +4,19 @@
             case 'page' && isset($page):
             $url = $page->present()->url($locale);
             break;
-            case 'news.slug' && isset($post):
-            case 'blog.slug' && isset($post):
+            case 'news.slug':
+            case 'blog.slug':
             $url = $post->present()->url($locale);
             break;
-            case 'news.category' && isset($category):
-            case 'blog.category' && isset($category):
-            case 'store.category.slug' && isset($category):
+            case 'news.category':
+            case 'blog.category':
+            case 'store.category.slug':
             $url = $category->present()->url($locale);
             break;
-            case 'store.product.slug' && isset($product):
+            case 'store.product.slug':
             $url = $product->present()->url($locale);
             break;
-            case 'employee.view' && isset($employee):
+            case 'employee.view':
             $url = $employee->present()->url($locale);
             break;
             default:

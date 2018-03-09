@@ -50,7 +50,7 @@ body{
 }
 
 ::-moz-selection{
-  background-color:darken(white, 25%);
+  background-color:darken(white, 50%);
   color:#fff;
 }
 
@@ -241,6 +241,12 @@ textarea{
   -webkit-transition: all .15s;
   -o-transition: all .15s;
   transition: all .15s;
+}
+
+select.form-control {
+  border-radius: 0;
+  padding:0.2rem 1rem 0;
+  height:3em;
 }
 
 textarea{

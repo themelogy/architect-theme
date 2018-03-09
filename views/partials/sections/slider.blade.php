@@ -39,7 +39,11 @@
                                  data-splitout="none"
                                  data-responsive_offset="on"
                                  data-elementdelay="0.05" style="font-weight:500; letter-spacing:-0.1em;">
+                                @if($slide->link_type != 'none')
                                 <a class="slider-link link-arrow" href="{{ $slide->link->url }}" target="{{ $slide->link->target }}">{{ $slide->sub_title }}</a>
+                                @else
+                                {{ $slide->sub_title }}
+                                @endif
                             </div>
                             @endif
 

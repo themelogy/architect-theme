@@ -103,10 +103,10 @@
   padding-left: $sidebar-left-padding-size;
   padding-top: 10px;
   padding-right: 10px;
-  overflow-x:hidden;
-  overflow-y:auto;
-  -webkit-overflow-scrolling:touch;
-  overflow-scrolling:touch;
+  //overflow-x:hidden;
+  //overflow-y:auto;
+  //-webkit-overflow-scrolling:touch;
+  //overflow-scrolling:touch;
   font-weight: 600;
   letter-spacing: -0.025rem;
   list-style: none;

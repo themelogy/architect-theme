@@ -81,7 +81,12 @@
 }
 
 .footer-flex .flex-item{
-  margin-top: 4rem;
+  @media screen and (min-width: 650px) {
+    margin-top: 4rem;
+  }
+  @media screen and (max-width: 650px) {
+    margin-top: 1rem;
+  }
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;

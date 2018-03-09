@@ -24,9 +24,11 @@
                             </div>
                             @if(count($post->tags)>0)
                                 <div class="tags-links m-top-20">
-                                    <span>{{ trans('tag::tags.tag') }}</span>
+                                    <span class="text-white">{{ trans('tag::tags.tag') }}</span>
                                     @foreach($post->tags as $tag)
+                                        @if(!empty($tag->slug))
                                         <a class="text-white" href="{{ route('news.tag', [$tag->slug]) }}">{{ $tag->name }}</a>@if(!$loop->first && $loop->last), @endif
+                                        @endif
                                     @endforeach
                                 </div>
                             @endif

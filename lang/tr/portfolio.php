@@ -14,7 +14,9 @@ return [
         'area_size'        => 'Alan',
         'meta_title'       => 'Mimari Projeler',
         'meta_description' => 'Mimari Projeler',
-        'all'              => 'Tümü'
+        'all'              => 'Tümü',
+        'tech_desc'        => 'Teknik Açıklama',
+        'video'            => 'Video'
     ],
     'button' => [
         'view'     => 'Projeyi İncele',

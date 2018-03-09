@@ -1,3 +1,7 @@
+@php
+seo_helper()->meta()->addMeta('viewport', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no')
+                    ->addMeta('X-UA-Compatible', 'IE=edge,chrome=1');
+@endphp
 <!DOCTYPE HTML>
 <html lang="{{ LaravelLocalization::getCurrentLocale() }}">
 <head>

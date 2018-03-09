@@ -3,9 +3,9 @@
 @section('content')
     <div class="content">
         <div class="resize-carousel-holder lightgallery">
-            <div id="gallery_horizontal" class="owl-carousel gallery_horizontal project-details">
+            <div id="gallery_horizontal" class="owl-carousel owl-theme gallery_horizontal project-details">
                 @foreach($portfolio->present()->images(null,720,'resize',85) as $image)
-                    <div class="horizontal_item">
+                    <div class="horizontal_item item">
                         <a class="popup-image slider-zoom" data-src="{{ $image }}" data-sub-html="{{ $portfolio->title }}"><i class="fa fa-expand"></i></a>
                         <img class="owl-lazy" data-src="{{ $image }}" alt="{{ $portfolio->title }} {{ $loop->iteration }}"/>
                     </div>
@@ -26,51 +26,63 @@
                             @if(!empty($portfolio->description))
                                 <div class="description">{!! $portfolio->description !!}</div>
                             @endif
+                            @if(@$portfolio->settings->tech_desc->{locale()})
+                                <h4 class="title m-bot-10 m-top-20">{{ trans('themes::portfolio.title.tech_desc') }}</h4>
+                                <div class="description">{!! @$portfolio->settings->tech_desc->{locale()} !!}</div>
+                            @endif
                             <ul class="detail-list">
                                 @if(!empty(@$portfolio->settings->location))
-                                    <li>
-                                        <span class="left uppercase">{{ trans('themes::portfolio.title.location') }} :</span>
-                                        <span class="right">{{ $portfolio->settings->location }}</span>
+                                    <li class="row">
+                                        <span class="col-md-2 col-xs-12 text-bold">{{ trans('themes::portfolio.title.location') }}</span>
+                                        <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span> {{ $portfolio->settings->location }}</span>
                                     </li>
                                 @endif
-                                <li>
-                                    <span class="left">{{ trans('themes::portfolio.title.year') }} :</span>
-                                    <span class="right">{{ $portfolio->start_at->formatLocalized('%Y') }}</span>
+                                <li class="row">
+                                    <span class="col-md-2 col-xs-12 text-bold">{{ trans('themes::portfolio.title.year') }}</span>
+                                    <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span> {{ $portfolio->start_at->formatLocalized('%Y') }}</span>
                                 </li>
                                 @if(!empty(@$portfolio->category->title))
-                                    <li>
-                                        <span class="left">{{ trans('themes::portfolio.title.category') }}:</span>
-                                        <span class="right">{{ Html::link($portfolio->category->url, $portfolio->category->title) }}</span>
+                                    <li class="row">
+                                        <span class="col-md-2 col-xs-12 text-bold">{{ trans('themes::portfolio.title.category') }}</span>
+                                        <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span> {{ Html::link($portfolio->category->url, $portfolio->category->title) }}</span>
                                     </li>
                                 @endif
                                 @if(!empty(@$portfolio->settings->area_size))
-                                    <li>
-                                        <span class="left uppercase">{{ trans('themes::portfolio.title.area_size') }} :</span>
-                                        <span class="right">{{ $portfolio->settings->area_size }}</span>
+                                    <li class="row">
+                                        <span class="col-md-2 col-xs-12 text-bold">{{ trans('themes::portfolio.title.area_size') }} </span>
+                                        <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span> {{ $portfolio->settings->area_size }}</span>
                                     </li>
                                 @endif
                                 @if(!empty(@$portfolio->settings->describe->tr))
-                                    <li>
-                                        <span class="left">{{ trans('themes::portfolio.title.describe') }} :</span>
-                                        <span class="right">{{ $portfolio->settings->describe->{locale()} }}</span>
+                                    <li class="row">
+                                        <span class="col-md-2 col-xs-12 text-bold">{{ trans('themes::portfolio.title.describe') }} </span>
+                                        <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span> {{ $portfolio->settings->describe->{locale()} }}</span>
                                     </li>
                                 @endif
                                 @if(!empty(@$portfolio->settings->employer->tr))
-                                    <li>
-                                        <span class="left">{{ trans('themes::portfolio.title.employer') }} :</span>
-                                        <span class="right">{{ $portfolio->settings->employer->{locale()} }}</span>
+                                    <li class="row">
+                                        <span class="col-md-2 col-xs-12 text-bold">{{ trans('themes::portfolio.title.employer') }} </span>
+                                        <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span> {{ $portfolio->settings->employer->{locale()} }}</span>
                                     </li>
                                 @endif
                                 @if(!empty(@$portfolio->website))
-                                    <li>
-                                        <span class="left">{{ trans('themes::portfolio.title.website') }} :</span>
-                                        <span class="right"><a target="_blank" href="{{ $portfolio->website }}">{{ $portfolio->website }}</a> </span>
+                                    <li class="row">
+                                        <span class="col-md-2 text-bold col-xs-12">{{ trans('themes::portfolio.title.website') }} </span>
+                                        <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span> <a target="_blank" href="{{ $portfolio->website }}">{{ $portfolio->website }}</a> </span>
                                     </li>
                                 @endif
+                                    @if(!empty(@$portfolio->settings->video))
+                                        <li class="row">
+                                            <span class="col-md-2 text-bold col-xs-12">{{ trans('themes::portfolio.title.video') }} </span>
+                                            <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span>
+                                                <a class="play-1 btn btn-bordered" href="{{ $portfolio->settings->video }}"><i class="fa fa-play"></i></a>
+                                            </span>
+                                        </li>
+                                    @endif
                             </ul>
                             <div class="detail-meta m-top-20">
-                                <span class="left hidden-xs pull-sm-left">{{ trans('themes::portfolio.title.share') }} :</span>
-                                <div class="pull-sm-right">
+                                <span class="hidden-xs text-bold pull-left m-top-10 m-rgt-10">{{ trans('themes::portfolio.title.share') }} </span>
+                                <div class="pull-left">
                                     @include('partials.components.share', ['theme'=>'plain'])
                                 </div>
                             </div>
@@ -108,4 +120,9 @@
 {!! Asset::add(Theme::url('vendor/lightgallery/dist/js/lightgallery.min.js')) !!}
 {!! Asset::add(Theme::url('vendor/owl.carousel/dist/assets/owl.carousel.min.css')) !!}
 {!! Asset::add(Theme::url('vendor/owl.carousel/dist/owl.carousel.min.js')) !!}
+@if(@$portfolio->settings->video)
+{!! Asset::add(Theme::url('vendor/youtubeurl/jquery.yu2fvl.css')) !!}
+{!! Asset::add(Theme::url('vendor/youtubeurl/jquery.yu2fvl.min.js')) !!}
+<script> $('.play-1').yu2fvl(); </script>
+@endif
 @endpush

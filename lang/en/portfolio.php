@@ -13,7 +13,8 @@ return [
         'share'            => 'Share',
         'area_size'        => 'Area',
         'meta_title'       => 'Architecture',
-        'meta_description' => 'Architecture'
+        'meta_description' => 'Architecture',
+        'video'            => 'Video'
     ],
     'button' => [
         'view'   => 'View Project',

@@ -14,7 +14,7 @@
                         <h3 class="sub-title m-top-0 m-bot-20 dt-color">{{ $employee->position }}</h3>
                         <hr/>
                         <div class="information">
-                            {!! $employee->description !!}
+                            {!! $employee->biography !!}
                         </div>
                     </div>
                 </div>

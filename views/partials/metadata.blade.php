@@ -1,5 +1,10 @@
 {!! seo_helper()->render() !!}
 
+<meta id="token" name="token" content="{{ csrf_token() }}" />
+@if($currentUser)
+<meta id="authorization" name="authorization" content="{{ $currentUser->getFirstApiKey() }}" />
+@endif
+
 <!-- Favicons -->
 <link rel="shortcut icon" href="{{ Theme::url("images/favicon.png") }}">
 <link rel="apple-touch-icon" href="{{ Theme::url("images/apple-touch-icon.png") }}">
@@ -13,4 +18,4 @@
 {!! Theme::style('vendor/revolution/css/navigation.css') !!}
 @stack('css-stack')
 {!! Asset::css() !!}
-{!! Theme::style('css/style.css?v=14') !!}
+{!! Theme::style('css/style.css?v=20') !!}
