@@ -16,7 +16,7 @@ return [
         'meta_description' => 'Mimari Projeler',
         'all'              => 'Tümü',
         'tech_desc'        => 'Teknik Açıklama',
-        'video'            => 'Video'
+        'video'            => 'Tanıtım Filmi'
     ],
     'button' => [
         'view'     => 'Projeyi İncele',

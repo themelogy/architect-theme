@@ -7,7 +7,7 @@
                 @foreach($portfolio->present()->images(null,720,'resize',85) as $image)
                     <div class="horizontal_item item">
                         <a class="popup-image slider-zoom" data-src="{{ $image }}" data-sub-html="{{ $portfolio->title }}"><i class="fa fa-expand"></i></a>
-                        <img class="owl-lazy" data-src="{{ $image }}" alt="{{ $portfolio->title }} {{ $loop->iteration }}"/>
+                        <img src="{{ $image }}" alt="{{ $portfolio->title }} {{ $loop->iteration }}"/>
                     </div>
                 @endforeach
             </div>
@@ -41,10 +41,12 @@
                                     <span class="col-md-2 col-xs-12 text-bold">{{ trans('themes::portfolio.title.year') }}</span>
                                     <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span> {{ $portfolio->start_at->formatLocalized('%Y') }}</span>
                                 </li>
-                                @if(!empty(@$portfolio->category->title))
+                                @if(isset($portfolio->categories))
                                     <li class="row">
                                         <span class="col-md-2 col-xs-12 text-bold">{{ trans('themes::portfolio.title.category') }}</span>
-                                        <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span> {{ Html::link($portfolio->category->url, $portfolio->category->title) }}</span>
+                                        <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span>
+                                        {!! $portfolio->present()->categories !!}
+                                        </span>
                                     </li>
                                 @endif
                                 @if(!empty(@$portfolio->settings->area_size))
@@ -71,14 +73,14 @@
                                         <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span> <a target="_blank" href="{{ $portfolio->website }}">{{ $portfolio->website }}</a> </span>
                                     </li>
                                 @endif
-                                    @if(!empty(@$portfolio->settings->video))
-                                        <li class="row">
-                                            <span class="col-md-2 text-bold col-xs-12">{{ trans('themes::portfolio.title.video') }} </span>
-                                            <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span>
+                                @if(!empty(@$portfolio->settings->video))
+                                    <li class="row">
+                                        <span class="col-md-2 text-bold col-xs-12">{{ trans('themes::portfolio.title.video') }} </span>
+                                        <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span>
                                                 <a class="play-1 btn btn-bordered" href="{{ $portfolio->settings->video }}"><i class="fa fa-play"></i></a>
                                             </span>
-                                        </li>
-                                    @endif
+                                    </li>
+                                @endif
                             </ul>
                             <div class="detail-meta m-top-20">
                                 <span class="hidden-xs text-bold pull-left m-top-10 m-rgt-10">{{ trans('themes::portfolio.title.share') }} </span>
@@ -102,7 +104,7 @@
                                 @if(count($portfolio->tags)>0)
                                     <ul class="list-inline">
                                         @foreach($portfolio->tags as $tag)
-                                        <li><a class="text-white" href="{{ route('news.tag', [$tag->slug]) }}">{{ $tag->name }}</a></li>
+                                            <li><a class="text-white" href="{{ route('news.tag', [$tag->slug]) }}">{{ $tag->name }}</a></li>
                                         @endforeach
                                     </ul>
                                 @endif
@@ -121,8 +123,8 @@
 {!! Asset::add(Theme::url('vendor/owl.carousel/dist/assets/owl.carousel.min.css')) !!}
 {!! Asset::add(Theme::url('vendor/owl.carousel/dist/owl.carousel.min.js')) !!}
 @if(@$portfolio->settings->video)
-{!! Asset::add(Theme::url('vendor/youtubeurl/jquery.yu2fvl.css')) !!}
-{!! Asset::add(Theme::url('vendor/youtubeurl/jquery.yu2fvl.min.js')) !!}
-<script> $('.play-1').yu2fvl(); </script>
+    {!! Asset::add(Theme::url('vendor/youtubeurl/jquery.yu2fvl.css')) !!}
+    {!! Asset::add(Theme::url('vendor/youtubeurl/jquery.yu2fvl.min.js')) !!}
+    <script> $('.play-1').yu2fvl({minPaddingX: 200, minPaddingY: 200}); </script>
 @endif
 @endpush

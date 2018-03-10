@@ -14,7 +14,7 @@ return [
         'area_size'        => 'Area',
         'meta_title'       => 'Architecture',
         'meta_description' => 'Architecture',
-        'video'            => 'Video'
+        'video'            => 'Introductory Film'
     ],
     'button' => [
         'view'   => 'View Project',
