@@ -7,6 +7,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="title h-line">{{ trans('themes::hr.title.hr') }}</h1>
+                    <!-- Kişisel Bilgiler -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -65,6 +66,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- Kimlik Bilgisi -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -130,6 +132,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- İletişim Bilgileri -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -211,6 +214,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- Sürücü Belgesi -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -245,6 +249,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- Sağlık Durumu -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -272,6 +277,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- Sabıka Durumu -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -299,6 +305,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- Kişisel Beceriler -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -353,6 +360,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- Yabancı Dil Bilgisi -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -436,6 +444,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- Öğrenim Durumu -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -508,6 +517,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- Kurs ve Eğitimler -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -550,6 +560,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- İş Tecrübesi -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -652,6 +663,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- Referanslar -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -717,6 +729,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- Başvuru Bilgileri -->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -778,6 +791,7 @@
                             </fieldset>
                         </div>
                     </div>
+                    <!-- Acil Durumlarda Haber Vereceğiniz Kişiler-->
                     <div class="row">
                         <div class="col-md-12">
                             <fieldset>
@@ -816,7 +830,20 @@
                             </fieldset>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="fileinput fileinput-new" data-provides="fileinput">
+                                <span class="btn btn-default btn-bordered btn-file">
+                                    <span>CV Ekle</span>
+                                    <input type="file" name="attachment" v-on:change="onFileChange" />
+                                </span>
+                                <span class="fileinput-filename"></span>
+                                <span class="fileinput-new"> Dosya Eklenmedi</span>
+                            </div>
+                        </div>
+                    </div>
                     <hr/>
+                    <!-- Save Button -->
                     <div class="row">
                         <div class="col-md-12 m-top-bot-20">
                             <p class="font-12">{{ trans('hr::applications.messages.notice') }}</p>
@@ -852,6 +879,8 @@
 <script src="{!! Module::asset('hr:js/tr.js') !!}"></script>
 <script src="{!! Module::asset('hr:js/bootstrap-datetimepicker.min.js') !!}"></script>
 <link rel="stylesheet" href="{!! Module::asset('hr:css/bootstrap-datetimepicker.min.css') !!}" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.js"></script>
 @if(App::environment()=='production')
     <script src="{!! Module::asset('hr:js/vue.min.js') !!}"></script>
 @else
@@ -863,17 +892,15 @@
 
 @push('js-inline')
 <script>
-    @if($currentUser)
-        axios.defaults.headers.common['Authorization'] = 'Bearer {{ $currentUser->getFirstApiKey() }}';
-    @endif
-        @if(App::environment()=='local')
+    @if(App::environment()=='local')
         Vue.config.devtools = true;
     @endif
     Vue.prototype.$http = axios;
-    window.axios.defaults.headers.common = {
-        'X-Requested-With': 'XMLHttpRequest',
-        'X-CSRF-TOKEN': '{{ csrf_token() }}'
-    };
+    window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+    window.axios.defaults.headers.common['X-CSRF-TOKEN']     = '{{ csrf_token() }}';
+    @if($currentUser)
+    window.axios.defaults.headers.common['Authorization']    = 'Bearer {{ $currentUser->getFirstApiKey() }}';
+    @endif
     window.axios.defaults.headers.common['Cache-Control'] = 'no-cache';
     Vue.component('date-picker', VueBootstrapDatetimePicker.default);
     var app = new Vue({
@@ -942,7 +969,7 @@
                     department: 0
                 },
                 user_id: '{{ $currentUser ? $currentUser->id : '' }}',
-                position_id: null
+                position_id: '{{ !isset($position) ? '' : $position->id }}'
             },
             newApplication: {},
             formErrors: {
@@ -957,11 +984,16 @@
             this.authorization_key = '{{ csrf_token() }}';
         },
         mounted: function() {
-            if(this.application.user_id) {
+            if(this.application.id) {
                 this.getUser(this.application.user_id);
             }
         },
         methods: {
+            onFileChange: function (e) {
+                e.preventDefault();
+                var files = e.target.files || e.dataTransfer.files;
+                this.application.attachment = files[0];
+            },
             buttonStatus: function() {
                 if(this.application.id != '') {
                     this.button = '{{ trans('hr::applications.buttons.update') }}';
@@ -1073,19 +1105,16 @@
                 axios.get('{{ route('api.hr.application.user') }}')
                         .then(({ data })=> {
                     this.application = JSON.parse(data.message);
-                @if(isset($position))
-                        this.application.position_id = '{{ !isset($position) ? '' : $position->id }}';
-                @endif
                 if(typeof data.notification != "undefined") {
                     this.pnotify(data.notification, 'notice');
                 }
                 this.buttonStatus();
                 this.ajaxStart(false);
-            }).catch(error => {
-                    this.pnotify(error.response.data.message, 'notice');
-                // this.formErrors = error.response.data.message;
-                this.ajaxStart(false);
-            });
+                }).catch(error => {
+                        this.pnotify(error.response.data.message, 'notice');
+                    // this.formErrors = error.response.data.message;
+                    this.ajaxStart(false);
+                });
             }
         }
     });

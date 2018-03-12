@@ -4,6 +4,7 @@
 {{--{!! Theme::script('js/wow.min.js') !!}--}}
 {{--{!! Theme::script('js/jquery.stellar.min.js') !!}--}}
 {!! Theme::script('js/imagesloaded.pkgd.min.js') !!}
+{!! Theme::script('js/smooth-scroll.js') !!}
 {{--{!! Theme::script('js/plugins.js') !!}--}}
 {{--{!! Theme::script('vendor/jquery.nicescroll/jquery.nicescroll.min.js') !!}--}}
 
@@ -11,7 +12,7 @@
 {!! Asset::js() !!}
 
 <!-- Scripts -->
-{!! Theme::script('js/scripts-min.js?v=20') !!}
+{!! Theme::script('js/scripts-min.js?v=30') !!}
 
 @stack('css-inline')
 @stack('js-inline')

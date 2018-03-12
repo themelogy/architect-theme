@@ -5,9 +5,9 @@
         <div class="resize-carousel-holder lightgallery">
             <div id="gallery_horizontal" class="owl-carousel owl-theme gallery_horizontal project-details">
                 @foreach($portfolio->present()->images(null,720,'resize',85) as $image)
-                    <div class="owl-item">
+                    <div class="horizontal_item item">
                         <a class="popup-image slider-zoom" data-src="{{ $image }}" data-sub-html="{{ $portfolio->title }}"><i class="fa fa-expand"></i></a>
-                        <img class="owl-lazy" data-src="{{ $image }}" alt="{{ $portfolio->title }} {{ $loop->iteration }}"/>
+                        <img src="{{ $image }}" alt="{{ $portfolio->title }} {{ $loop->iteration }}"/>
                     </div>
                 @endforeach
             </div>
@@ -45,7 +45,7 @@
                                     <li class="row">
                                         <span class="col-md-2 col-xs-12 text-bold">{{ trans('themes::portfolio.title.category') }}</span>
                                         <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span>
-                                            {!! $portfolio->present()->categories !!}
+                                        {!! $portfolio->present()->categories !!}
                                         </span>
                                     </li>
                                 @endif

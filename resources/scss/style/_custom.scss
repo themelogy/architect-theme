@@ -232,3 +232,8 @@ a.fill-div {
   padding: 5px 7px 5px 9px;
   border-radius: 20px;
 }
+
+.owl-item {
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}

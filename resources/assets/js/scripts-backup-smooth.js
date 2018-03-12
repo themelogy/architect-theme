@@ -318,13 +318,9 @@
 			items: 1,
 			smartSpeed: 250,
 			loop: true,
-			// autoplay: true,
-			// autoplayTimeout: 3000,
 			center: true,
 			nav: true,
 			video:true,
-			lazyLoad: true,
-			lazyFollow: true,
 			navText: ["", ""],
 			onInitialized: function () {
 				if (w.width() > 768) {
@@ -364,10 +360,8 @@
 		w.on("resize.destroyhorizontal", function () {
 			setTimeout(initGalleryhorizontal, 500);
 		});
-		gR.on('loaded.owl.lazy', function(event) {
-			$(this).find('.owl-item.active img').one('load', function () {
-				gR.trigger('refresh.owl.carousel');
-			});
+		gR.imagesLoaded().progress( function(){
+			gR.trigger('refresh.owl.carousel');
 		});
 	}
 
@@ -456,6 +450,7 @@
 			$(".rev_slider").revnext();
 		});
 	}
+
 	/* ------------------------------------------------------------------------
 	 Smooth Scroll
 	 ------------------------------------------------------------------------ */
@@ -478,5 +473,6 @@
 			autoKill: true,
 			overwrite: 5
 		});
+
 	});
 })(jQuery);

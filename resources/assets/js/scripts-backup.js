@@ -407,12 +407,6 @@
 			setTimeout(initGalleryhorizontal, 500);
 		});
 		gR.on('loaded.owl.lazy', function(event) {
-			var totitem = event.item.count + 2;
-			var nextitem = event.item.index + 1;
-			if (nextitem <= totitem) {
-				var imgsrc = $(event.target).find('.item').eq(nextitem).find('img').data('src');
-				$(event.target).find('.item').eq(nextitem).find('img').attr("src", imgsrc).css("opacity", "1");
-			}
 			$(this).find('.owl-item.active img').one('load', function () {
 				gR.trigger('refresh.owl.carousel');
 			});

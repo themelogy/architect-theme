@@ -4,7 +4,7 @@
     $image_mode = $image_width && $image_height ? 'fit' : 'resize';
 @endphp
 
-<div class="grid-item {{ $portfolio->category->slug }} js-isotope-item js-grid-item p-bot-10">
+<div class="grid-item js-isotope-item js-grid-item p-bot-10">
     <div class="project-item">
         <a href="{{ $portfolio->url }}"><img alt="{{ $portfolio->title }}" class="image img-responsive" src="{{ $portfolio->present()->firstImage($image_width,$image_height,$image_mode,80) }}"></a>
         <a href="{{ $portfolio->url }}">
