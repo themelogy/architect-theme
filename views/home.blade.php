@@ -1,3 +1,7 @@
+@php
+    seo_helper()->setSiteName('');
+@endphp
+
 @extends('layouts.master')
 
 @section('navbar')
@@ -6,18 +10,11 @@
 
 @section('content')
     <main class="jumbotron">
-        {!! Widget::get('themeSlide', ['anasayfa']) !!}
+        @themeSlide('anasayfa')
     </main>
-
     <div class="content boxed">
-
-        {!! Widget::get('portfolio_latest') !!}
-
-        {!! Widget::get('news_latest') !!}
-
+        @portfolioLatest()
+        @newsLatestPosts()
     </div>
-
-
-    {!! Widget::get('portfolio_brands', [20]) !!}
-
+    @portfolioBrands(20)
 @endsection

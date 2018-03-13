@@ -50,37 +50,37 @@
   margin: 5px 0;
   padding: 0 0 0 20px;
 }
-.team-box:before , .team-box:after {
-  content:'';
-  position:absolute;
-  right:0;
-  bottom:0;
-  background:#000;
-}
-.team-box:before {
-  width:0;
-  height:2px;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-}
-.team-box:after {
-  width:2px;
-  height:0;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-}
-.team-box:hover:before {
-  width:50px;
-}
-.team-box:hover:after {
-  height:50px;
-}
+//.team-box:before , .team-box:after {
+//  content:'';
+//  position:absolute;
+//  right:0;
+//  bottom:0;
+//  background:#000;
+//}
+//.team-box:before {
+//  width:0;
+//  height:2px;
+//  -webkit-transition: all .5s;
+//  -moz-transition: all .5s;
+//  -ms-transition: all .5s;
+//  -o-transition: all .5s;
+//  transition: all .5s;
+//}
+//.team-box:after {
+//  width:2px;
+//  height:0;
+//  -webkit-transition: all .5s;
+//  -moz-transition: all .5s;
+//  -ms-transition: all .5s;
+//  -o-transition: all .5s;
+//  transition: all .5s;
+//}
+//.team-box:hover:before {
+//  width:50px;
+//}
+//.team-box:hover:after {
+//  height:50px;
+//}
 .team-photo {
   position:relative;
   overflow:hidden;

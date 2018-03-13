@@ -324,7 +324,6 @@
 			nav: true,
 			video:true,
 			lazyLoad: true,
-			lazyFollow: true,
 			navText: ["", ""],
 			onInitialized: function () {
 				if (w.width() > 768) {
