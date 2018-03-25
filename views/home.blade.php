@@ -1,5 +1,5 @@
 @php
-    seo_helper()->setSiteName('');
+seo_helper()->setSiteName('');
 @endphp
 
 @extends('layouts.master')
@@ -14,6 +14,7 @@
     </main>
     <div class="content boxed">
         @portfolioLatest()
+        @include('partials.sections.portfolio-group')
         @newsLatestPosts()
     </div>
     @portfolioBrands(20)

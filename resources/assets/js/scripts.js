@@ -233,22 +233,6 @@
 	});
 
 	/*-------------------------------------------------------------------------------
-	 Scroll
-	 -------------------------------------------------------------------------------*/
-	$(window).scroll(function () {
-		if ($(window).scrollTop() >= 100) {
-			$('.bt-top').addClass('visible');
-		} else {
-			$('.bt-top').removeClass('visible');
-		}
-	});
-
-	$('.bt-top').on('click', function (e) {
-		e.preventDefault();
-		$('html, body').animate({scrollTop: '0px'}, 800);
-	});
-
-	/*-------------------------------------------------------------------------------
 	 Navbar Logo Changed
 	 -------------------------------------------------------------------------------*/
 
@@ -477,5 +461,25 @@
 			autoKill: true,
 			overwrite: 5
 		});
+	});
+
+	/*-------------------------------------------------------------------------------
+	 Scroll
+	 -------------------------------------------------------------------------------*/
+	$(window).scroll(function () {
+		if ($(window).scrollTop() >= 100) {
+			$('.bt-top').addClass('visible');
+		} else {
+			$('.bt-top').removeClass('visible');
+		}
+	});
+
+	$('.bt-top').on('click', function (e) {
+		e.preventDefault();
+		TweenMax.to(window, 1, {scrollTo:{y:0, x:0}});
+	});
+	$('.scrolldown').on('click', function(e) {
+		e.preventDefault();
+		TweenMax.to(window, 1, {scrollTo:'#content'});
 	});
 })(jQuery);
