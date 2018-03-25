@@ -16,7 +16,16 @@ return [
         'meta_description' => 'Mimari Projeler',
         'all'              => 'Tümü',
         'tech_desc'        => 'Teknik Açıklama',
-        'video'            => 'Tanıtım Filmi'
+        'video'            => 'Tanıtım Filmi',
+        'partner'          => 'Partner',
+    ],
+    'settings' => [
+        'groups' => [
+            1 => 'Geliştirdiğimiz Projeler',
+            2 => 'Yatırım Projeleri',
+            3 => 'Özel Projeler',
+            4 => 'Devam Eden Projeler'
+        ]
     ],
     'button' => [
         'view'     => 'Projeyi İncele',

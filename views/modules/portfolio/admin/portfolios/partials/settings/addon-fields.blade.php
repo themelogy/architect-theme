@@ -4,6 +4,11 @@
 ])
 
 <div class="box-body">
+    <div class="form-group{{ $errors->has("settings.group") ? ' has-error' : '' }}">
+        {!! Form::label("settings.group", "Proje Grubu".':') !!}
+        {!! Form::select('settings[group]', [''=>'Seçiniz']+trans('themes::portfolio.settings.groups'), !isset($portfolio->settings->group) ? null : $portfolio->settings->group, ['class'=>'form-control']) !!}
+        {!! $errors->first("settings.group", '<span class="help-block">:message</span>') !!}
+    </div>
     <div class="form-group{{ $errors->has("settings.area_size") ? ' has-error' : '' }}">
         {!! Form::label("settings.area_size", "Alan".':') !!}
         {!! Form::input('text', 'settings[area_size]', !isset($portfolio->settings->area_size) ? '' : $portfolio->settings->area_size, ['class'=>'form-control']) !!}
@@ -13,6 +18,11 @@
         {!! Form::label("settings.location", "Lokasyon".':') !!}
         {!! Form::input('text', 'settings[location]', !isset($portfolio->settings->location) ? '' : $portfolio->settings->location, ['class'=>'form-control']) !!}
         {!! $errors->first("settings.location", '<span class="help-block">:message</span>') !!}
+    </div>
+    <div class="form-group{{ $errors->has("settings.partner") ? ' has-error' : '' }}">
+        {!! Form::label("settings.partner", "Partner".':') !!}
+        {!! Form::input('text', 'settings[partner]', !isset($portfolio->settings->partner) ? '' : $portfolio->settings->partner, ['class'=>'form-control']) !!}
+        {!! $errors->first("settings.partner", '<span class="help-block">:message</span>') !!}
     </div>
     <div class="form-group{{ $errors->has("settings.image_width") ? ' has-error' : '' }}">
         {!! Form::label("settings.image_width", "Resim Genişliği".':') !!}

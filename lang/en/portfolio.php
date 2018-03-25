@@ -14,7 +14,16 @@ return [
         'area_size'        => 'Area',
         'meta_title'       => 'Architecture',
         'meta_description' => 'Architecture',
-        'video'            => 'Introductory Film'
+        'video'            => 'Introductory Film',
+        'partner'          => 'Partner',
+    ],
+    'settings' => [
+        'groups' => [
+            1 => 'Developed Projects',
+            2 => 'Investment Projects',
+            3 => 'Speacial Projects',
+            4 => 'Ongoing Projects'
+        ]
     ],
     'button' => [
         'view'   => 'View Project',
