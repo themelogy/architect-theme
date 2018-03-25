@@ -12,7 +12,7 @@
 {!! Asset::js() !!}
 
 <!-- Scripts -->
-{!! Theme::script('js/scripts-min.js?v=30') !!}
+{!! Theme::script('js/scripts-min.js?v=40') !!}
 
 @stack('css-inline')
 @stack('js-inline')
