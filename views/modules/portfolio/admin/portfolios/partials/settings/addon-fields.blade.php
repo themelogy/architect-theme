@@ -4,10 +4,17 @@
 ])
 
 <div class="box-body">
-    <div class="form-group{{ $errors->has("settings.group") ? ' has-error' : '' }}">
-        {!! Form::label("settings.group", "Proje Grubu".':') !!}
-        {!! Form::select('settings[group]', [''=>'Seçiniz']+trans('themes::portfolio.settings.groups'), !isset($portfolio->settings->group) ? null : $portfolio->settings->group, ['class'=>'form-control']) !!}
-        {!! $errors->first("settings.group", '<span class="help-block">:message</span>') !!}
+    <div class="row">
+        @foreach(trans('themes::portfolio.settings.groups') as $key => $group)
+        <div class="col-md-3">
+            <div class="form-group" style="margin-right: 10px;">
+                <label>
+                    {!! Form::checkbox("settings[groups][]", $key, old('settings.groups.'.$key, in_array($key, $portfolio->settings->groups ?? [])), ['class'=>'flat-blue']) !!}
+                    {{ $group }}
+                </label>
+            </div>
+        </div>
+        @endforeach
     </div>
     <div class="form-group{{ $errors->has("settings.area_size") ? ' has-error' : '' }}">
         {!! Form::label("settings.area_size", "Alan".':') !!}
