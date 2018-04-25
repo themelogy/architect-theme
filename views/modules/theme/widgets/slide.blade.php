@@ -6,11 +6,10 @@
                 @foreach($slides as $slide)
                     <li data-transition="fade" data-slotamount="6" data-masterspeed="1000"
                         data-fsmasterspeed="1000"
-                        data-thumb="{{ $slide->present()->firstImage(100,100,'fit',70) }}"
                         data-delay="{{ $slide->settings->delay*1000 ?? '4000' }}">
 
                         <!-- Main image-->
-                        <img data-lazyload="{{ $slide->present()->firstImage(1920,1080,'fit',70) }}"
+                        <img data-lazyload="{{ $slide->present()->firstImage(1600,900,'fit',60) }}"
                              data-bgparallax="5"
                              alt="{{ $slide->sub_title }}"
                              data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat"

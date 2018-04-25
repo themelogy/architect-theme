@@ -19,11 +19,17 @@
             case 'employee.view':
             $url = $employee->present()->url($locale);
             break;
+            case 'portfolio.slug':
+            $url = $portfolio->present()->url($locale);
+            break;
+            case 'portfolio.category.slug':
+            $url = $category->present()->url($locale);
+            break;
             default:
             $url = null;
             break;
         }
-        $localizedUrl = LaravelLocalization::getLocalizedURL($locale, $url);
+        $localizedUrl = LaravelLocalization::getLocalizedURL($locale, $url, [], true);
     @endphp
     @if(isset($list_type))
         <li class="{{ $locale == locale() ? 'active' : '' }}">

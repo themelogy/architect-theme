@@ -22,5 +22,6 @@
 @endsection
 
 @push('js-stack')
+{!! Asset::add(Theme::url('js/imagesloaded.pkgd.min.js')) !!}
 {!! Asset::add(Theme::url('js/isotope.pkgd.min.js')) !!}
 @endpush

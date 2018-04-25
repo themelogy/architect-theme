@@ -4,7 +4,7 @@
     <div class="content">
         <div class="resize-carousel-holder lightgallery">
             <div id="gallery_horizontal" class="owl-carousel owl-theme gallery_horizontal project-details">
-                @foreach($portfolio->present()->images(null,720,'resize',85) as $image)
+                @foreach($portfolio->present()->images(null,720,'resize',60) as $image)
                     <div class="owl-item">
                         <a class="popup-image slider-zoom" data-src="{{ $image }}" data-sub-html="{{ $portfolio->title }}"><i class="fa fa-expand"></i></a>
                         <img class="owl-lazy" data-src="{{ $image }}" alt="{{ $portfolio->title }} {{ $loop->iteration }}"/>

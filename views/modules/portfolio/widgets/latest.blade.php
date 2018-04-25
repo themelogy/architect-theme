@@ -10,7 +10,7 @@
     <div class="project-carousel owl-carousel">
         @foreach($portfolios as $portfolio)
             <div class="project-item item-shadow building">
-                <img alt="{{ $portfolio->title }}" class="img-responsive" src="{{ $portfolio->present()->firstImage(426,579,'fit',80) }}">
+                <img alt="{{ $portfolio->title }}" class="img-responsive" src="{{ $portfolio->present()->firstImage(426,579,'fit',60) }}">
                 <div class="project-hover">
                     <div class="project-hover-content">
                         <h3 class="project-title">

@@ -3,7 +3,6 @@
 {!! Theme::script('js/bootstrap.min.js') !!}
 {{--{!! Theme::script('js/wow.min.js') !!}--}}
 {{--{!! Theme::script('js/jquery.stellar.min.js') !!}--}}
-{!! Theme::script('js/imagesloaded.pkgd.min.js') !!}
 {!! Theme::script('js/smooth-scroll.js') !!}
 {{--{!! Theme::script('js/plugins.js') !!}--}}
 {{--{!! Theme::script('vendor/jquery.nicescroll/jquery.nicescroll.min.js') !!}--}}
