@@ -41,7 +41,7 @@
                                     <span class="col-md-2 col-xs-12 text-bold">{{ trans('themes::portfolio.title.year') }}</span>
                                     <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span> {{ $portfolio->start_at->formatLocalized('%Y') }}</span>
                                 </li>
-                                @if(isset($portfolio->categories))
+                                @if($portfolio->categories()->exists())
                                     <li class="row">
                                         <span class="col-md-2 col-xs-12 text-bold">{{ trans('themes::portfolio.title.category') }}</span>
                                         <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span>

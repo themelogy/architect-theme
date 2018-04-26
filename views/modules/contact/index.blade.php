@@ -23,6 +23,9 @@
                                 <p class="phone-sm m-bot-5 text-muted">T: {{ setting('theme::phone') }} / {{ setting('theme::phone2') }}</p>
                                 <p class="phone-sm m-bot-5 text-muted">F: {{ setting('theme::fax') }}</p>
                                 <p class="contact-row text-muted email-sm">{!! Html::email(setting('theme::email')) !!}</p>
+                                <h3 class="contact-title contact-top m-top-20">{{ trans('themes::contact.istanbul office') }}</h3>
+                                <p class="contact-address m-bot-5 text-muted">Göktürk Merkez Mahallesi İstanbul Caddesi <br/>İstanbul&İstanbul Evleri G-3 Blok <br/>No:21 Göktürk-EYÜP / İSTANBUL</p>
+                                <p class="phone-sm m-bot-5 text-muted">T: +90 (0212) 322 35 84</p>
                                 <div class="text-muted m-top-30"><strong>{{ trans('themes::contact.follow us') }}</strong><br>
                                     <div class="contact-social social-list">
                                         @include('partials.components.social')

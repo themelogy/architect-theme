@@ -398,3 +398,8 @@ label.error{
   border-top-right-radius:4px;
   border-bottom-left-radius:0;
 }
+
+
+.bordered {
+  border: 1px solid $default-theme-color !important;
+}

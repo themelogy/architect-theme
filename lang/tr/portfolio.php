@@ -23,8 +23,7 @@ return [
         'groups' => [
             1 => 'Geliştirdiğimiz Projeler',
             2 => 'Yatırım Projeleri',
-            3 => 'Özel Projeler',
-            4 => 'Devam Eden Projeler'
+            3 => 'Devam Eden Projeler'
         ]
     ],
     'button' => [

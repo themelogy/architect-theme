@@ -1,5 +1,5 @@
 @foreach(trans('themes::portfolio.settings.groups') as $key => $group)
-<div class="col-md-3 lg-m-bot-0 m-bot-20">
+<div class="col-md-4 lg-m-bot-0 m-bot-20">
     @php
         if(isset($groups[$key][0])) {
             $devImage = $groups[$key][0]->present()->firstImage(400,600,'fit',80);

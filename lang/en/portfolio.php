@@ -21,8 +21,7 @@ return [
         'groups' => [
             1 => 'Developed Projects',
             2 => 'Investment Projects',
-            3 => 'Speacial Projects',
-            4 => 'Ongoing Projects'
+            3 => 'Ongoing Projects'
         ]
     ],
     'button' => [
