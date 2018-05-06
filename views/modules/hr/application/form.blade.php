@@ -253,15 +253,23 @@
         }
     }
     function pnotifiy (errors, type='error') {
-        var html = "<div class=\"notify\">";
+        var html = "<ul>";
         if(type=='error') {
             html += _.map(errors, function (error, key) {
-                return "<p>" + error + "</p>";
+                if(typeof error[0] === 'object') {
+                    er = '';
+                    _.each(error[0], function(e,k){
+                        if(k === 'file')
+                        er += "<li>" + e + "</li>";
+                    });
+                    return er;
+                }
+                return "<li>" + error + "</li>";
             }).join('');
         } else {
             html += errors;
         }
-        html += "</div>";
+        html += "</ul>";
         PNotify.prototype.options.styling = "bootstrap3";
         new PNotify({
             title: '{{ trans('hr::applications.title.application') }}',
