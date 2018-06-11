@@ -87,6 +87,12 @@
                                             </span>
                                     </li>
                                 @endif
+                                @if(@$portfolio->present()->file)
+                                        <li class="row">
+                                            <span class="col-md-2 text-bold col-xs-12">{{ trans('themes::portfolio.title.file') }} </span>
+                                            <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span> <a class="download-btn btn btn-bordered" target="_blank" href="{{ $portfolio->present()->file }}"><i class="fa fa-download"></i></a> </span>
+                                        </li>
+                                @endif
                             </ul>
                             <div class="detail-meta m-top-20">
                                 <span class="hidden-xs text-bold pull-left m-top-10 m-rgt-10">{{ trans('themes::portfolio.title.share') }} </span>
@@ -122,6 +128,15 @@
         </section>
     </div>
 @endsection
+
+@push('css-inline')
+    <style>
+        .download-btn {
+            padding: 5px 7px 5px 9px;
+            border-radius: 20px;
+        }
+    </style>
+@endpush
 
 @push('js-inline')
 {!! Asset::add(Theme::url('vendor/lightgallery/dist/css/lightgallery.min.css')) !!}
