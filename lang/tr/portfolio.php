@@ -18,6 +18,7 @@ return [
         'tech_desc'        => 'Teknik Açıklama',
         'video'            => 'Tanıtım Filmi',
         'partner'          => 'Partner',
+        'file'             => 'Tanıtım Kataloğu'
     ],
     'settings' => [
         'groups' => [
