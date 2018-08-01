@@ -13,11 +13,15 @@
             <div class="modal-body">
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#addon-fields" data-toggle="tab">EK Alanlar</a></li>
+                        <li class="active"><a href="#addon-fields" data-toggle="tab">Tanımlar</a></li>
+                        <li><a href="#addon-settings" data-toggle="tab">Ayarlar</a></li>
                     </ul>
                     <div class="tab-content">
                         <div class="tab-pane active" id="addon-fields">
                             @include('portfolio::admin.portfolios.partials.settings.addon-fields')
+                        </div>
+                        <div class="tab-pane" id="addon-settings">
+                            @include('portfolio::admin.portfolios.partials.settings.setting-fields')
                         </div>
                     </div>
                 </div>
