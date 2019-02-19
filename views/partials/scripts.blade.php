@@ -13,6 +13,13 @@
 <!-- Scripts -->
 {!! Theme::script('js/scripts-min.js?v=50') !!}
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/unveil/1.3.0/jquery.unveil.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("img").unveil();
+    });
+</script>
+
 @stack('css-inline')
 @stack('js-inline')
 

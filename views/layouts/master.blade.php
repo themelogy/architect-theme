@@ -1,5 +1,6 @@
 @php
 seo_helper()->meta()->addMeta('X-UA-Compatible', 'IE=edge,chrome=1');
+view()->composer('partials.header',\Themes\Architect\Presenter\MenuModify::class);
 @endphp
 <!DOCTYPE HTML>
 <html lang="{{ LaravelLocalization::getCurrentLocale() }}">
