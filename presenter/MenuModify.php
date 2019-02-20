@@ -15,7 +15,7 @@ class MenuModify
 
         $categories = app(CategoryRepository::class)->all()->where('status', 1)->sortBy('ordering');
         if(count($menuItem)>0) {
-            $menu = \Menu::instance('header');
+            $menu = \Menu::instance($menuItem->menu->name);
             $menu->whereTitle($menuItem->title, function($sub) use ($categories){
                 $sub->add([
                    'title' => trans('themes::portfolio.title.all'),
