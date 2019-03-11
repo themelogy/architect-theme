@@ -45,7 +45,10 @@
                                     <li class="row">
                                         <span class="col-md-2 col-xs-12 text-bold">{{ trans('themes::portfolio.title.category') }}</span>
                                         <span class="col-md-10 col-xs-12"><span class="hidden-xs">:</span>
-                                            {!! $portfolio->present()->categories !!}
+                                            {!! $portfolio->categories->map(function($category){
+                                                    $link = '<a class="label label-danger" href="'.$category->url.'">'.$category->title.'</a>';
+                                                    return $link;
+                                                })->implode(' ') !!}
                                         </span>
                                     </li>
                                 @endif

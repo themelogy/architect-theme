@@ -9,7 +9,7 @@
                         data-delay="{{ $slide->settings->delay*1000 ?? '4000' }}">
 
                         <!-- Main image-->
-                        <img data-lazyload="{{ $slide->present()->firstImage(1600,900,'fit',60) }}"
+                        <img data-lazyload="{{ $slide->present()->firstImage(1920,1080,'fit',60) }}"
                              data-bgparallax="5"
                              alt="{{ $slide->sub_title }}"
                              data-bgposition="center 0" data-bgfit="cover" data-bgrepeat="no-repeat"
@@ -20,9 +20,9 @@
                                  data-color="{{ $slide->settings->title_color ?? '#ffffff' }}"
                                  data-textalign="{{ $slide->settings->title_align ?? 'left' }}"
                                  data-x="{{ $slide->settings->title_position_h ?? 'left' }}"
-                                 data-hoffset="{!! @$slide->settings->title_position_x !!}"
+                                 data-hoffset="{!! $slide->settings->title_position_x ?? 0 !!}"
                                  data-y="{{ $slide->settings->title_position_v ?? 'center' }}"
-                                 data-voffset="{!! @$slide->settings->title_position_y !!}"
+                                 data-voffset="{!! $slide->settings->title_position_y ?? 0 !!}"
                                  data-fontsize="{!! $slide->present()->settings('range', 'title_font_size', 'title_font_responsive', json_encode([74,66,46,36]), true) !!}"
                                  data-lineheight="{!! $slide->present()->settings('range', 'title_line_height', 'title_font_responsive', json_encode([74,66,46,36]), true) !!}"
                                  data-width="{!! $slide->present()->settings('range', 'title_width', 'title_height', json_encode([0,0,0,0]), true) !!}"
@@ -36,8 +36,14 @@
                                  data-splitout="none"
                                  data-responsive_offset="on"
                                  data-elementdelay="0.05" style="font-weight:500; letter-spacing:-0.1em;">
-                                <a class="slider-link link-arrow text-shadow" href="{{ $slide->link->url }}"
-                                   target="{{ $slide->link->target }}">{{ $slide->sub_title }}</a>
+                                 @if($slide->link_type != 'none' && @$slide->uri)
+                                <a class="slider-link link-arrow text-shadow" href="{{ $slide->present()->link->url }}"
+                                   target="{{ $slide->present()->link->target }}">{{ $slide->sub_title ?? null }}</a>
+                                 @else
+                                    <a class="slider-link link-arrow text-shadow" href="#" rel="nofollow"> 
+                                    {{ $slide->sub_title }}
+                                    </a>
+                                 @endif  
                             </div>
                         @endif
 
@@ -84,7 +90,7 @@
                                  data-splitout="none"
                                  data-responsive_offset="on"
                                  data-elementdelay="0.05" style="font-weight:600;">
-                                <a href="{{ $slide->link->url }}" target="{{ $slide->link->target }}"
+                                <a href="{{ $slide->present()->link->url }}" target="{{ $slide->present()->link->url }}"
                                    class="slider-link link-arrow">{{ $slide->link->title }} <i
                                             class="icon ion-ios-arrow-thin-right"></i>
                                 </a>
